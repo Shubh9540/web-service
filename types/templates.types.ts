@@ -256,6 +256,7 @@ export interface ContactData {
     servicesList: string[];
   };
   mapUrl: string;
+  image?: string;
   infoBoxes?: {
     icon: string;
     title: string;
@@ -403,6 +404,22 @@ export interface PricingData {
   plans: PricingPlan[];
 }
 
+
+export interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface FaqData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  image: string;
+  faqs: FaqItem[];
+}
+
 export interface WebserviceTemplateData {
   common: {
     aboutBreadcrumb?: any;
@@ -425,6 +442,7 @@ export interface WebserviceTemplateData {
         Testimonials?: { variants?: { WebserviceTestimonials1?: TestimonialsData } };
         Portfolio?: { variants?: { WebservicePortfolio1?: PortfolioData } };
         Pricing?: { variants?: { WebservicePricing1?: PricingData } };
+        Faq?: { variants?: { WebserviceFaq1?: FaqData } };
         Counter?: { variants?: { WebserviceCounter1?: CounterData } };
         Technologies?: { variants?: { WebserviceTechnologies1?: TechnologiesData } };
         Cta?: { variants?: { WebserviceCta1?: CtaData } };

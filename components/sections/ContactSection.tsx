@@ -1,131 +1,152 @@
+'use client';
+
 import React from 'react';
 import { ContactData } from '@/types/templates.types';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaHeadset, FaFileAlt } from 'react-icons/fa';
-
-const renderIcon = (iconName: string, className: string = '') => {
-  switch (iconName) {
-    case 'FaMapMarkerAlt': return <FaMapMarkerAlt className={className} />;
-    case 'FaPhoneAlt': return <FaPhoneAlt className={className} />;
-    case 'FaEnvelope': return <FaEnvelope className={className} />;
-    case 'FaClock': return <FaClock className={className} />;
-    case 'FaHeadset': return <FaHeadset className={className} />;
-    case 'FaFileAlt': return <FaFileAlt className={className} />;
-    default: return null;
-  }
-};
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaArrowRight } from 'react-icons/fa';
 
 export const ContactSection = ({ data }: { data?: ContactData }) => {
   if (!data) return null;
 
   return (
-    <section className="w-full py-8 lg:py-12 bg-white relative">
-      <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-        
-        {/* Left Column */}
-        <div className="flex flex-col lg:col-span-5">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#3f1956] text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider mb-6 w-max">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#c099d8]"></span>
-            {data.subtitle}
+    <section className="w-full py-16 lg:py-12 bg-white relative overflow-hidden">
+
+      {/* Background Shapes for the entire section or form area */}
+      <div className="pointer-events-none absolute left-0 top-[60%] h-[600px] w-[600px] -translate-x-1/2 translate-y-[-50%] rounded-full bg-[#edf5ff] opacity-60 blur-[100px]" />
+      <div className="pointer-events-none absolute right-0 top-[80%] h-[600px] w-[600px] translate-x-1/3 translate-y-[-50%] rounded-full bg-[#edf5ff] opacity-60 blur-[100px]" />
+
+      {/* Dot Grid Top Right */}
+      <div className="pointer-events-none absolute right-10 top-20 grid grid-cols-6 gap-[10px] opacity-30">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <span key={i} className="h-[4px] w-[4px] rounded-full bg-[#0d65ff]" />
+        ))}
+      </div>
+
+      {/* Dot Grid Bottom Left */}
+      <div className="pointer-events-none absolute left-10 bottom-40 grid grid-cols-6 gap-[10px] opacity-30">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <span key={i} className="h-[4px] w-[4px] rounded-full bg-[#0d65ff]" />
+        ))}
+      </div>
+
+      <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+
+        {/* Top Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start mb-24">
+
+          {/* Left: Contact Details */}
+          <div className="flex flex-col lg:col-span-4">
+            {/* Subtitle */}
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-[#0f67ff]" />
+              <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#0f67ff]">
+                NEED ANY HELP?
+              </span>
+              <span className="h-px w-8 bg-[#0f67ff]" />
+            </div>
+
+            {/* Title */}
+            <h2 className="text-4xl md:text-5xl lg:text-[46px] font-extrabold text-[#051024] leading-[1.15] mb-6">
+              Get in touch <br /><span className="text-[#0d65ff]">with us</span>
+            </h2>
+
+            <p className="text-[#657187] text-[15px] mb-10 leading-relaxed max-w-[450px]">
+              We are always here to help you. Share your requirements and our team will get back to you as soon as possible.
+            </p>
+
+            {/* Contact Info List */}
+            <div className="flex flex-col gap-8">
+              {/* Phone */}
+              <div className="flex items-start gap-5 group cursor-pointer">
+                <div className="w-[50px] h-[50px] shrink-0 rounded-full bg-[#edf5ff] flex items-center justify-center text-[#0d65ff] text-[18px] transition-all duration-300 group-hover:bg-[#0d65ff] group-hover:text-white group-hover:-translate-y-1 group-hover:shadow-lg">
+                  <FaPhoneAlt />
+                </div>
+                <div className="flex flex-col pt-1">
+                  <span className="text-[15px] font-bold text-[#051024] mb-1">Have any question?</span>
+                  <span className="text-[14px] text-[#657187] transition-colors group-hover:text-[#0d65ff]">{data.contactInfo.phone}</span>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start gap-5 group cursor-pointer">
+                <div className="w-[50px] h-[50px] shrink-0 rounded-full bg-[#edf5ff] flex items-center justify-center text-[#0d65ff] text-[18px] transition-all duration-300 group-hover:bg-[#0d65ff] group-hover:text-white group-hover:-translate-y-1 group-hover:shadow-lg">
+                  <FaEnvelope />
+                </div>
+                <div className="flex flex-col pt-1">
+                  <span className="text-[15px] font-bold text-[#051024] mb-1">Write email</span>
+                  <span className="text-[14px] text-[#657187] transition-colors group-hover:text-[#0d65ff]">{data.contactInfo.email}</span>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-start gap-5 group cursor-pointer">
+                <div className="w-[50px] h-[50px] shrink-0 rounded-full bg-[#edf5ff] flex items-center justify-center text-[#0d65ff] text-[18px] transition-all duration-300 group-hover:bg-[#0d65ff] group-hover:text-white group-hover:-translate-y-1 group-hover:shadow-lg">
+                  <FaMapMarkerAlt />
+                </div>
+                <div className="flex flex-col pt-1">
+                  <span className="text-[15px] font-bold text-[#051024] mb-1">Visit anytime</span>
+                  <span className="text-[14px] text-[#657187] leading-relaxed max-w-[200px] transition-colors group-hover:text-[#0d65ff]">{data.contactInfo.address}</span>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          {/* Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-[54px] font-extrabold text-[#051024] leading-[1.1] mb-6">
-            {data.title1} <span className="text-[#3f1956]">{data.title2}</span>
-          </h2>
-
-          <p className="text-gray-600 text-sm md:text-base mb-10 leading-relaxed max-w-lg">
-            {data.description}
-          </p>
-
-          {/* Form */}
-          <div className="bg-[#fdfbfe] rounded-2xl p-6 md:p-8 border border-[#e8dff0]">
-            <h3 className="text-2xl font-bold text-[#051024] mb-8">{data.form?.title || 'Send Us a Message'}</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <input type="text" placeholder="Your Name *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
-                </div>
-                <div>
-                  <input type="email" placeholder="Your Email *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
-                </div>
-                <div>
-                  <input type="tel" placeholder="Phone Number *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
-                </div>
-                <div>
-                  <input type="text" placeholder="Subject *" className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors" required />
-                </div>
-              </div>
-              <div>
-                <textarea placeholder="Your Message *" rows={5} className="w-full px-5 py-3.5 bg-white border border-[#e8dff0] rounded-xl text-gray-700 text-sm focus:outline-none focus:border-[#3f1956] transition-colors resize-none" required></textarea>
-              </div>
-              <button type="submit" className="inline-flex items-center justify-center gap-2 bg-[#3f1956] hover:bg-[#291038] text-white font-bold py-4 px-8 rounded-xl transition-colors text-sm w-full md:w-auto">
-                {data.form?.buttonText || 'Send Message'} <span className="text-lg">→</span>
-              </button>
-            </form>
+          {/* Right: Map & Image Block */}
+          <div className="lg:col-span-8 flex flex-col sm:flex-row h-[500px] w-full rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(13,101,255,0.1)] border border-[#e4edfa]">
+            <div className="w-full sm:w-1/2 h-1/2 sm:h-full relative overflow-hidden group">
+              <img src={data.image || "/banner/ban1.jpg"} alt="Office Building" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-[#0d65ff]/10 mix-blend-multiply"></div>
+            </div>
+            <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-gray-100 relative">
+              <iframe
+                src={data.mapUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full grayscale-[20%] contrast-[1.1] opacity-90"
+              ></iframe>
+            </div>
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className="flex flex-col gap-6 lg:col-span-7">
-          {/* Top Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Address */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaMapMarkerAlt />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.addressTitle}</h4>
-              <p className="text-xs text-gray-600 leading-relaxed">{data.contactInfo.address}</p>
+        {/* Bottom Section: Contact Form */}
+        <div className="w-full max-w-[950px] mx-auto bg-white/70 backdrop-blur-xl rounded-[24px] shadow-[0_20px_60px_rgba(13,101,255,0.06)] border border-[#e4edfa] p-8 md:p-12 relative z-20">
+
+          <div className="text-center mb-10">
+            <div className="mb-4 flex items-center justify-center gap-3">
+              <span className="h-px w-8 bg-[#0f67ff]" />
+              <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#0f67ff]">
+                CONTACT WITH US NOW
+              </span>
+              <span className="h-px w-8 bg-[#0f67ff]" />
             </div>
-            {/* Phone */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaPhoneAlt />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.phoneTitle}</h4>
-              <p className="text-xs text-gray-600">{data.contactInfo.phone}</p>
-            </div>
-            {/* Email */}
-            <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0] flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-16 h-16 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-3xl mb-5">
-                <FaEnvelope />
-              </div>
-              <h4 className="text-[15px] font-bold text-[#051024] mb-2">{data.contactInfo.emailTitle}</h4>
-              <p className="text-xs text-gray-600">{data.contactInfo.email}</p>
-            </div>
+            <h2 className="text-[32px] md:text-[40px] font-extrabold text-[#051024]">
+              Feel Free to Write Our <br /><span className="text-[#0d65ff]">Technology Experts</span>
+            </h2>
           </div>
 
-          {/* Map */}
-          <div className="w-full h-[280px] rounded-2xl overflow-hidden border border-[#e8dff0]">
-            <iframe 
-              src={data.mapUrl} 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={false} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          {/* Bottom Info Box */}
-          <div className="bg-[#fdfbfe] rounded-2xl p-6 border border-[#e8dff0]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-[#e8dff0]">
-              {data.infoBoxes?.map((box, index) => (
-                <div key={index} className={`flex flex-col md:flex-row items-center md:items-start gap-4 ${index !== 0 ? 'pt-6 md:pt-0 md:pl-6' : ''}`}>
-                  <div className="w-14 h-14 shrink-0 rounded-full bg-[#f3ebf8] flex items-center justify-center text-[#3f1956] text-2xl">
-                    {renderIcon(box.icon)}
-                  </div>
-                  <div className="text-center md:text-left">
-                    <h5 className="font-bold text-[#051024] text-xs mb-1">{box.title}</h5>
-                    <p className="text-[11px] text-gray-600">{box.desc1}</p>
-                    <p className="text-[11px] text-gray-600">{box.desc2}</p>
-                  </div>
-                </div>
-              ))}
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input type="text" placeholder="Your Name" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="email" placeholder="Your Email" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="text" placeholder="Subject" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="tel" placeholder="Your Phone Number" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
             </div>
-          </div>
+            <textarea placeholder="Your Message" rows={6} className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all resize-none"></textarea>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-4">
+              <button type="submit" className="flex items-center justify-center gap-2 bg-[#0d65ff] hover:bg-[#0b56db] hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(13,101,255,0.3)] text-white font-bold py-4 px-10 rounded-[12px] transition-all duration-300 text-[15px] min-w-[200px]">
+                Send Message <FaArrowRight className="text-[12px]" />
+              </button>
+              <button type="reset" className="flex items-center justify-center bg-[#edf5ff] hover:bg-[#dce9fa] hover:-translate-y-1 text-[#0d65ff] font-bold py-4 px-10 rounded-[12px] transition-all duration-300 text-[15px] min-w-[140px]">
+                Reset
+              </button>
+            </div>
+          </form>
+
         </div>
 
       </div>
