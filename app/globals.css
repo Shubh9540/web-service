@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-primary: var(--font-poppins), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+
+  /* Global Colors — Webservice Design */
+  --color-bg-main: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-bg-alt: #f3f7ff;
+  --color-primary: #0056fb;
+  --color-accent: #ffb703;
+  --color-accent-light: #4d8dff;
+  --color-text: #222222;
+  --color-text-light: #6b7280;
+  --color-border: #e0ebff;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg-main);
+}

@@ -1,0 +1,2375 @@
+{
+  "common": {
+    "Footer": {
+      "logoAlt": "BluePipe Logo",
+      "brandTitle": "BluePipe",
+      "copyrightText": "© 2026 Weblance. All Rights Reserved.Powered by Lestow",
+      "description": "At BluePipe, we provide reliable and professional webservice solutions for homes and businesses. From small repairs to complete installations, our team is committed to quality service and customer satisfaction.",
+      "hoursTitle": "Working Hours",
+      "hoursDays": "Mon - Sat:",
+      "hours": "9:00 AM - 7:00 PM\nSunday: Closed",
+      "socialLinks": [
+        {
+          "id": "1",
+          "icon": "FaFacebookF",
+          "url": "https://facebook.com"
+        },
+        {
+          "id": "2",
+          "icon": "FaTwitter",
+          "url": "https://twitter.com"
+        },
+        {
+          "id": "3",
+          "icon": "FaYoutube",
+          "url": "https://youtube.com"
+        },
+        {
+          "id": "4",
+          "icon": "FaInstagram",
+          "url": "https://instagram.com"
+        },
+        {
+          "id": "5",
+          "icon": "FaLinkedinIn",
+          "url": "https://linkedin.com"
+        }
+      ],
+      "quickLinks": [
+        {
+          "id": "ql1",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "ql2",
+          "label": "About Us",
+          "url": "/about"
+        },
+        {
+          "id": "ql3",
+          "label": "Our Services",
+          "url": "/services"
+        },
+        {
+          "id": "ql4",
+          "label": "Blog",
+          "url": "/blog"
+        },
+        {
+          "id": "ql5",
+          "label": "Contact Us",
+          "url": "/contact"
+        },
+        {
+          "id": "ql6",
+          "label": "Enquiry Now",
+          "url": "/enquiry"
+        }
+      ],
+      "servicesLinks": [
+        {
+          "id": "sl1",
+          "label": "Webservice Installation",
+          "url": "/services/webservice-installation"
+        },
+        {
+          "id": "sl2",
+          "label": "Leak Detection",
+          "url": "/services/leak-detection"
+        },
+        {
+          "id": "sl3",
+          "label": "Pipe & Drain Cleaning",
+          "url": "/services/pipe-drain-cleaning"
+        },
+        {
+          "id": "sl4",
+          "label": "General Webservice Repair",
+          "url": "/services/general-repair"
+        },
+        {
+          "id": "sl5",
+          "label": "Water Heater Services",
+          "url": "/services/water-heater"
+        },
+        {
+          "id": "sl6",
+          "label": "Bathroom Fixtures",
+          "url": "/services/bathroom-fixture"
+        }
+      ],
+      "contactInfo": {
+        "email": "info@xyz.com",
+        "phone": "+1 000000000",
+        "address": "123 Main St, New York, NY, USA"
+      },
+      "instagram": [
+        "/service/1.jpg",
+        "/service/2.jpg",
+        "/service/3.jpg",
+        "/service/4.jpg",
+        "/service/5.jpg",
+        "/service/6.jpg"
+      ]
+    },
+    "aboutBreadcrumb": {
+      "title": "About Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "About Us"
+        }
+      ]
+    },
+    "servicesBreadcrumb": {
+      "title": "Our Services",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Services"
+        }
+      ]
+    },
+    "contactBreadcrumb": {
+      "title": "Contact Us",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Contact Us"
+        }
+      ]
+    },
+    "enquiryBreadcrumb": {
+      "title": "Enquiry Now",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Enquiry Now"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "Webservice": {
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "WebserviceTopBar1": {
+              "phoneLabel": "Call Us :",
+              "phoneValue": "+1 000000000",
+              "emailValue": "info@xyz.com",
+              "followLabel": "Follow Us On :",
+              "socialLinks": [
+                {
+                  "id": "tb-fb",
+                  "icon": "FaFacebookF",
+                  "url": "https://www.facebook.com"
+                },
+                {
+                  "id": "tb-ig",
+                  "icon": "FaXTwitter",
+                  "url": "https://x.com"
+                },
+                {
+                  "id": "tb-in",
+                  "icon": "FaInstagram",
+                  "url": "https://www.instagram.com"
+                },
+                {
+                  "id": "tb-yt",
+                  "icon": "FaLinkedinIn",
+                  "url": "https://www.linkedin.com"
+                }
+              ]
+            }
+          }
+        },
+        "Header": {
+          "variants": {
+            "WebserviceHeader1": {
+              "logo": "/main logo/logo.webp",
+              "logoAlt": "BluePipe Webservice",
+              "contactInfoLeft": [
+                {
+                  "id": "ci-phone",
+                  "icon": "FiPhoneCall",
+                  "label": "Call for help:",
+                  "value": "+1 000000000"
+                },
+                {
+                  "id": "ci-email",
+                  "icon": "FiMail",
+                  "label": "Mail to us:",
+                  "value": "info@xyz.com"
+                }
+              ],
+              "contactInfoRight": [
+                {
+                  "id": "ci-location",
+                  "icon": "FiMapPin",
+                  "label": "Our Location:",
+                  "value": "123 Main St, New York, NY, USA"
+                }
+              ],
+              "navLinksLeft": [
+                {
+                  "id": "nl-home",
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "id": "nl-about",
+                  "label": "About Us",
+                  "url": "/about"
+                },
+                {
+                  "id": "nl-services",
+                  "label": "Services",
+                  "url": "/services"
+                }
+              ],
+              "navLinksRight": [
+                {
+                  "id": "nl-faq",
+                  "label": "Portfolio",
+                  "url": "/portfolio"
+                },
+                {
+                  "id": "nav-pricing",
+                  "label": "Pricing",
+                  "url": "/pricing"
+                },
+                {
+                  "id": "nl-contact",
+                  "label": "Contact Us",
+                  "url": "/contact"
+                }
+              ],
+              "contactButton": {
+                "text": "Enquire Now",
+                "url": "/enquiry"
+              }
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "WebserviceHero1": {
+              "subtitle": "BEST IT COMPANY",
+              "title1": "Get Our Business",
+              "title2": "This It Solution",
+              "title3": "",
+              "description": "Consectetur adipiscing elit aenean scelerisque at augue vitae consequat quisque eget congue velit in cursus leo sed sodales est eget turpis.",
+              "image1": "/banner/hero-1.jpg",
+              "image2": "",
+              "image3": "",
+              "button": {
+                "text": "Explore More",
+                "url": "/services"
+              },
+              "slides": [
+                {
+                  "id": "slide-1",
+                  "subtitle": "best it company",
+                  "title1": "Get Our Business",
+                  "title2": "This It Solution",
+                  "description": "Consectetur adipiscing elit aenean scelerisque at augue vitae consequat quisque eget congue velit in cursus leo sed sodales est eget turpis.",
+                  "image": "/banner/hero-1.jpg",
+                  "primaryButton": {
+                    "text": "Explore More",
+                    "url": "/services"
+                  },
+                  "secondaryButton": {
+                    "text": "Contact Us",
+                    "url": "/contact"
+                  }
+                },
+                {
+                  "id": "slide-2",
+                  "subtitle": "leading digital agency",
+                  "title1": "We Build Amazing",
+                  "title2": "Digital Products",
+                  "description": "Our team of expert developers and designers create stunning web experiences that help your business grow and reach new heights.",
+                  "image": "/banner/hero-2.jpg",
+                  "primaryButton": {
+                    "text": "Our Services",
+                    "url": "/services"
+                  },
+                  "secondaryButton": {
+                    "text": "Contact Us",
+                    "url": "/contact"
+                  }
+                },
+                {
+                  "id": "slide-3",
+                  "subtitle": "trusted technology partner",
+                  "title1": "Innovative Solutions",
+                  "title2": "For Your Business",
+                  "description": "From web development to digital marketing, we provide end-to-end solutions that drive real results for businesses of all sizes.",
+                  "image": "/banner/hero-3.jpg",
+                  "primaryButton": {
+                    "text": "Get Started",
+                    "url": "/contact"
+                  },
+                  "secondaryButton": {
+                    "text": "Learn More",
+                    "url": "/about"
+                  }
+                },
+                {
+                  "id": "slide-4",
+                  "subtitle": "your growth is our mission",
+                  "title1": "Transform Your",
+                  "title2": "Digital Presence",
+                  "description": "We help businesses unlock their full potential through cutting-edge technology, creative design and data-driven strategies.",
+                  "image": "/banner/hero-1.jpg",
+                  "primaryButton": {
+                    "text": "Explore More",
+                    "url": "/services"
+                  },
+                  "secondaryButton": {
+                    "text": "Contact Us",
+                    "url": "/contact"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "WebserviceAboutUs1": {
+              "subtitle": "// Welcome to Weblance",
+              "title1": "Experienced designers &",
+              "title2": "developers",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et We are passionate about changing the way you think about web solutions! dolore magna aliqua. quis nostrud exercitation.",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FaDesktop",
+                  "title": "Web solutions",
+                  "description": "Duis aute irure dolor simply free in voluptate velit."
+                },
+                {
+                  "id": "f2",
+                  "icon": "FaCode",
+                  "title": "Best interface",
+                  "description": "Duis aute irure dolor simply free in voluptate velit."
+                }
+              ],
+              "button": {
+                "text": "Explore now ->",
+                "url": "/about"
+              },
+              "imageMain": "/about/about1.jpg",
+              "imageSmall2": "/about/about small.jpg"
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "WebserviceServices1": {
+              "subtitle": "OUR SERVICES",
+              "title1": "Elevating Businesses With IT",
+              "title2": "Ingenuity",
+              "description": "",
+              "button": {
+                "text": "View More ->",
+                "url": "/services"
+              },
+              "services": [
+                {
+                  "id": "s1",
+                  "title": "Custom Software Development",
+                  "description": "Tailored software solutions to streamline your business processes and drive growth.",
+                  "image": "/service/1.jpg",
+                  "icon": "FaCode",
+                  "url": "/services/custom-software"
+                },
+                {
+                  "id": "s2",
+                  "title": "Cloud Solutions",
+                  "description": "Secure, scalable, and cost-effective cloud services to enhance flexibility and performance.",
+                  "image": "/service/2.jpg",
+                  "icon": "FaCloud",
+                  "url": "/services/cloud-solutions"
+                },
+                {
+                  "id": "s3",
+                  "title": "Cyber Security",
+                  "description": "Advanced security solutions to protect your data, systems, and business from evolving threats.",
+                  "image": "/service/3.jpg",
+                  "icon": "FaShieldAlt",
+                  "url": "/services/cyber-security"
+                },
+                {
+                  "id": "s4",
+                  "title": "IT Consulting",
+                  "description": "Expert guidance to help you choose the right technology and strategy for your business.",
+                  "image": "/service/4.jpg",
+                  "icon": "FaCog",
+                  "url": "/services/it-consulting"
+                },
+                {
+                  "id": "s5",
+                  "title": "IT Infrastructure Management",
+                  "description": "Reliable infrastructure solutions to ensure seamless operations and maximum uptime.",
+                  "image": "/service/5.jpg",
+                  "icon": "FaServer",
+                  "url": "/services/it-infrastructure"
+                },
+                {
+                  "id": "s6",
+                  "title": "Managed IT Services",
+                  "description": "Proactive monitoring and support to keep your systems running smoothly and efficiently.",
+                  "image": "/service/6.jpg",
+                  "icon": "FaUsers",
+                  "url": "/services/managed-it"
+                },
+                {
+                  "id": "s7",
+                  "title": "Data Analytics",
+                  "description": "Turn your data into valuable insights to make smarter business decisions.",
+                  "image": "/service/1.jpg",
+                  "icon": "FaChartBar",
+                  "url": "/services/data-analytics"
+                },
+                {
+                  "id": "s8",
+                  "title": "Mobile App Development",
+                  "description": "Innovative and user-friendly mobile applications for Android and iOS platforms.",
+                  "image": "/service/2.jpg",
+                  "icon": "FaMobileAlt",
+                  "url": "/services/mobile-app"
+                }
+              ]
+            }
+          }
+        },
+        "ServiceDetail": {
+          "variants": {
+            "webservice-installation": {
+              "id": "webservice-installation",
+              "subtitle": "Our Service",
+              "title1": "Webservice",
+              "title2": "Installation",
+              "description": "We provide professional webservice installation services for residential and commercial properties, ensuring long-lasting performance, leak-free connections and complete peace of mind.",
+              "imageMain": "/service/1.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Our pipe installation services are designed to meet the needs of modern homes and businesses. Whether you are constructing a new property or upgrading your existing webservice system, our skilled team ensures safe, efficient and high-quality installations using premium-grade materials.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "leak-detection": {
+              "id": "leak-detection",
+              "subtitle": "Our Service",
+              "title1": "Leak",
+              "title2": "Detection Services",
+              "description": "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+              "imageMain": "/service/2.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/2.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "pipe-drain-cleaning": {
+              "id": "pipe-drain-cleaning",
+              "subtitle": "Our Service",
+              "title1": "Pipe",
+              "title2": "& Drain Cleaning",
+              "description": "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+              "imageMain": "/service/3.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/3.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "general-repair": {
+              "id": "general-repair",
+              "subtitle": "Our Service",
+              "title1": "General",
+              "title2": "Webservice Repair",
+              "description": "From dripping faucets to faulty pipes, we handle all types of webservice repairs with reliable and long-lasting solutions.",
+              "imageMain": "/service/4.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "From dripping faucets to faulty pipes, we handle all types of webservice repairs with reliable and long-lasting solutions.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/4.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "water-heater": {
+              "id": "water-heater",
+              "subtitle": "Our Service",
+              "title1": "Water",
+              "title2": "Heater Services",
+              "description": "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+              "imageMain": "/service/5.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/5.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            },
+            "bathroom-fixture": {
+              "id": "bathroom-fixture",
+              "subtitle": "Our Service",
+              "title1": "Bathroom",
+              "title2": "Fixture Installation",
+              "description": "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+              "imageMain": "/service/6.jpg",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FiShield",
+                  "title": "Durable Installation"
+                },
+                {
+                  "id": "f2",
+                  "icon": "FiSettings",
+                  "title": "Quality Materials"
+                },
+                {
+                  "id": "f3",
+                  "icon": "FiClock",
+                  "title": "On-Time Completion"
+                },
+                {
+                  "id": "f4",
+                  "icon": "FiUsers",
+                  "title": "Experienced Technicians"
+                }
+              ],
+              "overviewTitle": "Service Overview",
+              "overviewText": [
+                "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
+                "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
+              ],
+              "overviewImage": "/service/6.jpg",
+              "processTitle": "Our Process",
+              "processSteps": [
+                {
+                  "id": "p1",
+                  "number": "01",
+                  "title": "Site Inspection",
+                  "description": "We assess your webservice requirements and recommend the best solution."
+                },
+                {
+                  "id": "p2",
+                  "number": "02",
+                  "title": "Planning & Design",
+                  "description": "Detailed planning to ensure a safe and efficient installation process."
+                },
+                {
+                  "id": "p3",
+                  "number": "03",
+                  "title": "Installation",
+                  "description": "Our experts install pipes using quality materials and proven techniques."
+                },
+                {
+                  "id": "p4",
+                  "number": "04",
+                  "title": "Testing & Support",
+                  "description": "We test the system for leaks and performance, and provide ongoing support."
+                }
+              ],
+              "faqTitle": "Frequently Asked Questions",
+              "faqs": [
+                {
+                  "id": "q1",
+                  "question": "What types of pipes do you install?",
+                  "answer": "We install a variety of pipes including PVC, copper, PEX, and galvanized steel depending on your specific requirements and local webservice codes."
+                },
+                {
+                  "id": "q2",
+                  "question": "How long does the installation process take?",
+                  "answer": "The duration depends on the scope of the project. A single fixture pipe installation might take a few hours, while whole-house repiping could take several days."
+                },
+                {
+                  "id": "q3",
+                  "question": "Do you provide a warranty on installation?",
+                  "answer": "Yes, we provide a comprehensive warranty on both our workmanship and the materials we supply."
+                },
+                {
+                  "id": "q4",
+                  "question": "Can you handle both residential and commercial projects?",
+                  "answer": "Absolutely! Our team is experienced in handling small residential pipe repairs as well as large-scale commercial pipe installations."
+                }
+              ],
+              "sidebar": {
+                "quoteForm": {
+                  "title": "Get a Free Quote",
+                  "description": "Fill out the form and our team will get back to you with the best solution for your needs.",
+                  "buttonText": "Enquire Now ->",
+                  "servicesList": [
+                    "Pipe Installation",
+                    "Leak Repairs",
+                    "Drain Cleaning",
+                    "Water Heaters",
+                    "Bathroom Webservice",
+                    "Emergency Webservice"
+                  ]
+                },
+                "servicesList": {
+                  "title": "Our Services",
+                  "services": [
+                    {
+                      "id": "s1",
+                      "label": "Webservice Installation",
+                      "url": "/services/webservice-installation"
+                    },
+                    {
+                      "id": "s2",
+                      "label": "Leak Detection Services",
+                      "url": "/services/leak-detection"
+                    },
+                    {
+                      "id": "s3",
+                      "label": "Pipe & Drain Cleaning",
+                      "url": "/services/pipe-drain-cleaning"
+                    },
+                    {
+                      "id": "s4",
+                      "label": "General Webservice Repair",
+                      "url": "/services/general-repair"
+                    },
+                    {
+                      "id": "s5",
+                      "label": "Water Heater Services",
+                      "url": "/services/water-heater"
+                    },
+                    {
+                      "id": "s6",
+                      "label": "Bathroom Fixture Installation",
+                      "url": "/services/bathroom-fixture"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Process": {
+          "variants": {
+            "WebserviceProcess1": {
+              "subtitle": "HOW IT WORKS",
+              "title1": "A Simple Process",
+              "title2": "For Webservice Services",
+              "bgImage": "/other/process.jpg",
+              "steps": [
+                {
+                  "id": "1",
+                  "icon": "FiMessageSquare",
+                  "number": "01",
+                  "title": "Discovery & Consultation",
+                  "description": "We understand your business goals, requirements and target audience to create the right strategy."
+                },
+                {
+                  "id": "2",
+                  "icon": "FiFileText",
+                  "number": "02",
+                  "title": "Planning & Strategy",
+                  "description": "We analyze, plan and create a tailored strategy with wireframes and timelines for smooth execution."
+                },
+                {
+                  "id": "3",
+                  "icon": "FiMonitor",
+                  "number": "03",
+                  "title": "Design & Development",
+                  "description": "Our team designs stunning UI/UX and develops high-performing, secure and scalable solutions."
+                },
+                {
+                  "id": "4",
+                  "icon": "FiClipboard",
+                  "number": "04",
+                  "title": "Testing & Quality Assurance",
+                  "description": "We thoroughly test for performance, security and bug-free functionality to deliver the best experience."
+                },
+                {
+                  "id": "5",
+                  "icon": "FaRocket",
+                  "number": "05",
+                  "title": "Launch & Support",
+                  "description": "We deploy your project successfully and provide continuous support to ensure long-term growth."
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "WebserviceTestimonials1": {
+              "subtitle": "TESTIMONIALS",
+              "title1": "Our Latest",
+              "title2": "Client Feedback",
+              "description": "We take pride in delivering exceptional solutions and building long-term relationships with our clients. Here's what they have to say about working with us.",
+              "testimonials": [
+                {
+                  "id": "1",
+                  "name": "Amit Sharma",
+                  "location": "Business Owner, Noida",
+                  "quote": "Extremely happy with the website developed for our business. The team understood our requirements very well and delivered exactly what we needed. The support after launch has also been excellent. Highly recommended!",
+                  "rating": 5,
+                  "avatar": "/team/1.jpg"
+                },
+                {
+                  "id": "2",
+                  "name": "Priya Singh",
+                  "location": "Marketing Manager, Delhi",
+                  "quote": "The team designed our company website professionally with a clean and modern look. Communication was smooth and the project was completed on time. We have already seen good response from our customers.",
+                  "rating": 5,
+                  "avatar": "/team/2.jpg"
+                },
+                {
+                  "id": "3",
+                  "name": "Rahul Verma",
+                  "location": "Founder, Gurugram",
+                  "quote": "Great experience working with this team! They delivered a user-friendly and responsive website for our organization. The design, speed and functionality are exactly as we wanted. Their support team is also very helpful.",
+                  "rating": 4,
+                  "avatar": "/team/3.jpg"
+                },
+                {
+                  "id": "4",
+                  "name": "Sneha Kapoor",
+                  "location": "CEO, Mumbai",
+                  "quote": "A truly fantastic experience from start to finish. They built a highly customized solution for us that exceeded all expectations. We are seeing a huge increase in conversions thanks to their outstanding work.",
+                  "rating": 5,
+                  "avatar": "/team/4.jpg"
+                },
+                {
+                  "id": "5",
+                  "name": "Vikram Malhotra",
+                  "location": "Director, Pune",
+                  "quote": "The developers are highly skilled and professional. They quickly resolved all our technical issues and delivered a robust product. We will definitely be coming back for our future software needs.",
+                  "rating": 5,
+                  "avatar": "/team/1.png"
+                },
+                {
+                  "id": "6",
+                  "name": "Anjali Desai",
+                  "location": "Product Manager, Bangalore",
+                  "quote": "Incredible attention to detail and superb project management. The final output is gorgeous, fast, and works perfectly on all devices. Thank you for making our vision a reality!",
+                  "rating": 5,
+                  "avatar": "/team/2.png"
+                }
+              ]
+            }
+          }
+        },
+        "Portfolio": {
+          "variants": {
+            "WebservicePortfolio1": {
+              "subtitle": "OUR PORTFOLIO",
+              "title1": "Check Our Latest",
+              "title2": "Portfolios",
+              "categories": [
+                {
+                  "id": "cat-data",
+                  "icon": "FaChartBar",
+                  "label": "Data Analysis",
+                  "subtitle": "// DATA ANALYSIS",
+                  "title": "Data Analysis",
+                  "description": "We provide robust data analysis solutions to help businesses understand their data, make informed decisions, and uncover new opportunities for growth.",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "icon": "FaChartPie",
+                      "title": "Data Visualization",
+                      "description": "Interactive and insightful dashboards."
+                    },
+                    {
+                      "id": "f2",
+                      "icon": "FaDatabase",
+                      "title": "Data Mining",
+                      "description": "Extracting hidden patterns and insights."
+                    },
+                    {
+                      "id": "f3",
+                      "icon": "FaChartLine",
+                      "title": "Predictive Analytics",
+                      "description": "Forecasting future trends accurately."
+                    },
+                    {
+                      "id": "f4",
+                      "icon": "FaServer",
+                      "title": "Big Data Solutions",
+                      "description": "Scalable infrastructure for large datasets."
+                    }
+                  ],
+                  "sliderImages": [
+                    "/portfolio/data analysis/1.webp",
+                    "/portfolio/data analysis/2.webp",
+                    "/portfolio/data analysis/3.webp"
+                  ],
+                  "fixedImage": "/portfolio/data analysis/right.webp",
+                  "button": {
+                    "text": "View All Projects ->",
+                    "url": "/portfolio"
+                  }
+                },
+                {
+                  "id": "cat-ui",
+                  "icon": "FaPencilRuler",
+                  "label": "UI/UX Designing",
+                  "subtitle": "// UI/UX DESIGNING",
+                  "title": "UI/UX Designing",
+                  "description": "Our UI/UX design services focus on creating intuitive, user-friendly, and visually appealing interfaces that deliver exceptional digital experiences.",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "icon": "FaMobileAlt",
+                      "title": "Mobile Design",
+                      "description": "Engaging apps for iOS and Android."
+                    },
+                    {
+                      "id": "f2",
+                      "icon": "FaLaptopCode",
+                      "title": "Web Design",
+                      "description": "Responsive and modern websites."
+                    },
+                    {
+                      "id": "f3",
+                      "icon": "FaPalette",
+                      "title": "Prototyping",
+                      "description": "Interactive wireframes and prototypes."
+                    },
+                    {
+                      "id": "f4",
+                      "icon": "FaUsers",
+                      "title": "User Testing",
+                      "description": "Data-driven design optimizations."
+                    }
+                  ],
+                  "sliderImages": [
+                    "/portfolio/ui/1.webp",
+                    "/portfolio/ui/2.webp",
+                    "/portfolio/ui/3.webp"
+                  ],
+                  "fixedImage": "/portfolio/ui/right.webp",
+                  "button": {
+                    "text": "View All Projects ->",
+                    "url": "/portfolio"
+                  }
+                },
+                {
+                  "id": "cat-app",
+                  "icon": "FaMobileAlt",
+                  "label": "App Development",
+                  "subtitle": "// APP DEVELOPMENT",
+                  "title": "App Development",
+                  "description": "We build powerful, secure and scalable mobile applications that help businesses grow and connect with their customers in a better way. Our apps are user-friendly, high-performing and designed to deliver real results.",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "icon": "FaMobile",
+                      "title": "Custom App Development",
+                      "description": "Tailor-made solutions for your business needs."
+                    },
+                    {
+                      "id": "f2",
+                      "icon": "FaLayerGroup",
+                      "title": "Cross-Platform Solutions",
+                      "description": "React Native and Flutter development."
+                    },
+                    {
+                      "id": "f3",
+                      "icon": "FaPenNib",
+                      "title": "UI/UX Focused Design",
+                      "description": "Intuitive interfaces for better engagement."
+                    },
+                    {
+                      "id": "f4",
+                      "icon": "FaShieldAlt",
+                      "title": "Scalable & Secure Apps",
+                      "description": "Built to grow with your business safely."
+                    }
+                  ],
+                  "sliderImages": [
+                    "/portfolio/app/1.webp",
+                    "/portfolio/app/2.webp",
+                    "/portfolio/app/3.webp"
+                  ],
+                  "fixedImage": "/portfolio/app/right.webp",
+                  "button": {
+                    "text": "View All Projects ->",
+                    "url": "/portfolio"
+                  }
+                },
+                {
+                  "id": "cat-wp",
+                  "icon": "FaWordpress",
+                  "label": "WP Development",
+                  "subtitle": "// WP DEVELOPMENT",
+                  "title": "WP Development",
+                  "description": "We provide custom WordPress development services, offering secure, scalable, and easy-to-manage websites tailored to your unique business requirements.",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "icon": "FaCode",
+                      "title": "Custom Themes",
+                      "description": "Unique designs tailored to your brand."
+                    },
+                    {
+                      "id": "f2",
+                      "icon": "FaPlug",
+                      "title": "Plugin Development",
+                      "description": "Custom functionality and integrations."
+                    },
+                    {
+                      "id": "f3",
+                      "icon": "FaTachometerAlt",
+                      "title": "Speed Optimization",
+                      "description": "Lightning-fast page load times."
+                    },
+                    {
+                      "id": "f4",
+                      "icon": "FaShieldAlt",
+                      "title": "Security & Maintenance",
+                      "description": "Keeping your site safe and updated."
+                    }
+                  ],
+                  "sliderImages": [
+                    "/portfolio/wp/1.webp",
+                    "/portfolio/wp/2.webp",
+                    "/portfolio/wp/3.webp"
+                  ],
+                  "fixedImage": "/portfolio/wp/right.webp",
+                  "button": {
+                    "text": "View All Projects ->",
+                    "url": "/portfolio"
+                  }
+                },
+                {
+                  "id": "cat-3d",
+                  "icon": "FaCube",
+                  "label": "3D Design Solution",
+                  "subtitle": "// 3D DESIGN SOLUTION",
+                  "title": "3D Design Solution",
+                  "description": "Bring your ideas to life with our high-quality 3D design and animation solutions. We create realistic models, engaging animations, and immersive experiences.",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "icon": "FaCubes",
+                      "title": "3D Modeling",
+                      "description": "Detailed and realistic product models."
+                    },
+                    {
+                      "id": "f2",
+                      "icon": "FaVideo",
+                      "title": "3D Animation",
+                      "description": "Engaging animations and walkthroughs."
+                    },
+                    {
+                      "id": "f3",
+                      "icon": "FaVrCardboard",
+                      "title": "AR/VR Solutions",
+                      "description": "Immersive augmented and virtual reality."
+                    },
+                    {
+                      "id": "f4",
+                      "icon": "FaDraftingCompass",
+                      "title": "Architectural Design",
+                      "description": "High-quality architectural visualizations."
+                    }
+                  ],
+                  "sliderImages": [
+                    "/portfolio/3d/1.webp",
+                    "/portfolio/3d/2.webp",
+                    "/portfolio/3d/3.webp"
+                  ],
+                  "fixedImage": "/portfolio/3d/right.webp",
+                  "button": {
+                    "text": "View All Projects ->",
+                    "url": "/portfolio"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Cta": {
+          "variants": {
+            "WebserviceCta1": {
+              "subtitle": "CONTACT US",
+              "title1": "24/7",
+              "title2": "Expert Support",
+              "description": "We're Always Here for You",
+              "button1": {
+                "text": "Contact Us",
+                "url": "/contact"
+              },
+              "button2": {
+                "text": "Contact Us",
+                "url": "/contact"
+              },
+              "image": "/other/cta.jpg"
+            }
+          }
+        },
+        "Blogs": {
+          "variants": {
+            "WebserviceBlogs1": {
+              "subtitle": "Our Blog",
+              "title1": "Latest News &",
+              "title2": "Blogs",
+              "description": "Helpful tips, expert advice, and the latest updates on webservice services to keep your home and business running smoothly.",
+              "button": {
+                "text": "View All Blogs",
+                "url": "/blog"
+              },
+              "blogs": [
+                {
+                  "id": "b1",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "5 Common Webservice Problems And How To Fix Them",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/5-common-webservice-problems-and-how-to-fix-them",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b2",
+                  "image": "/blog/2.jpg",
+                  "date": "08 Jun 2026",
+                  "category": "MAINTENANCE",
+                  "title": "Essential Webservice Maintenance Tips For Your Home",
+                  "description": "Regular webservice maintenance can help prevent costly repairs. Discover easy tips to keep your webservice system in top condition.",
+                  "url": "/blog/essential-webservice-maintenance-tips-for-your-home",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b3",
+                  "image": "/blog/3.jpg",
+                  "date": "02 Jun 2026",
+                  "category": "WATER HEATERS",
+                  "title": "Signs Your Water Heater Needs Repair Or Replacement",
+                  "description": "Is your water heater not working as it should? Here are the key signs to watch for and when it's time to call a professional.",
+                  "url": "/blog/signs-your-water-heater-needs-repair-or-replacement",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b4",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "Top Signs You Need a Professional Plumber",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/top-signs-you-need-a-professional-plumber",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b5",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "How to Stop a Running Toilet Fast",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/how-to-stop-a-running-toilet-fast",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b6",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "The Dangers of Chemical Drain Cleaners",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/the-dangers-of-chemical-drain-cleaners",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b7",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "Winterizing Your Home Webservice System",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/winterizing-your-home-webservice-system",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b8",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "Benefits of Upgrading to a Tankless Water Heater",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/benefits-of-upgrading-to-a-tankless-water-heater",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b9",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "What to Do During a Webservice Emergency",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/what-to-do-during-a-webservice-emergency",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b10",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "Understanding Your Home Water Pressure",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/understanding-your-home-water-pressure",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b11",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "Simple Tips to Keep Your Drains Clean",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/simple-tips-to-keep-your-drains-clean",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b12",
+                  "image": "/blog/1.jpg",
+                  "date": "12 Jun 2026",
+                  "category": "PLUMBING TIPS",
+                  "title": "How to Maintain Your Water Heater for Long Life",
+                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "url": "/blog/how-to-maintain-your-water-heater-for-long-life",
+                  "content": {
+                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "sections": [
+                      {
+                        "heading": "1. Be Mindful of What Goes Down the Drain",
+                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                      },
+                      {
+                        "heading": "2. Check for Leaks Regularly",
+                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                      },
+                      {
+                        "heading": "3. Maintain Your Water Heater",
+                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                      }
+                    ]
+                  }
+                }
+              ],
+              "sidebarCta": {
+                "title1": "Need Professional",
+                "title2": "Webservice Help?",
+                "description": "Our experienced team is ready to assist you with all your webservice needs. Get in touch today for a quick and reliable solution.",
+                "buttonText": "Enquire Now ->",
+                "buttonUrl": "/enquiry"
+              }
+            }
+          }
+        },
+        "whyChooseUs": {
+          "variants": {
+            "WebserviceWhyChooseUs1": {
+              "subtitle": "Why Choose Us",
+              "title1": "Your Growth is",
+              "title2": "Our Priority",
+              "description": "At Weblance, we combine creativity, technology and strategy to deliver digital solutions that help your business grow and stay ahead in the competitive market.",
+              "features": [
+                {
+                  "id": "wc-1",
+                  "icon": "FaUsers",
+                  "title": "Experienced Team",
+                  "description": "Skilled professionals with years of industry experience."
+                },
+                {
+                  "id": "wc-2",
+                  "icon": "FaLightbulb",
+                  "title": "Custom Solutions",
+                  "description": "Tailored strategies to meet your unique business needs."
+                },
+                {
+                  "id": "wc-3",
+                  "icon": "FaMedal",
+                  "title": "Quality & Innovation",
+                  "description": "We deliver modern, high-quality and innovative solutions."
+                },
+                {
+                  "id": "wc-4",
+                  "icon": "FaHeadset",
+                  "title": "Dedicated Support",
+                  "description": "Always here to assist you even after project delivery."
+                },
+                {
+                  "id": "wc-5",
+                  "icon": "FaChartLine",
+                  "title": "Result-Driven Approach",
+                  "description": "Focused on bringing real growth and measurable results."
+                },
+                {
+                  "id": "wc-6",
+                  "icon": "FaCheckCircle",
+                  "title": "On-Time Delivery",
+                  "description": "We value your time and ensure timely project delivery."
+                }
+              ],
+              "button": {
+                "text": "Get Started ->",
+                "url": "/contact"
+              },
+              "imageMain": "/portfolio/app/1.webp",
+              "badgeTitle": "100+",
+              "badgeText": "Projects Delivered"
+            }
+          }
+        },
+        "contact": {
+          "variants": {
+            "WebserviceContact1": {
+              "subtitle": "Contact Us",
+              "title1": "Get In Touch",
+              "title2": "With Us",
+              "description": "Have a question, need a quote, or want to schedule a webservice service? Our team is here to help. Reach out to us through the form or using the contact details below.",
+              "contactInfo": {
+                "phoneTitle": "Call Us",
+                "phone": "+1 000000000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "addressTitle": "Our Location",
+                "address": "123 Main St, New York, NY, USA",
+                "hoursTitle": "Working Hours",
+                "hoursLine1": "Mon - Sat: 9am - 7pm",
+                "hoursLine2": "Sunday: CLOSED"
+              },
+              "form": {
+                "title": "Send Us a Message",
+                "description": "Fill out the form below and our team will get back to you shortly.",
+                "buttonText": "Send Message",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              },
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.1444874457788!3d40.69766374865766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "infoBoxes": [
+                {
+                  "icon": "FaClock",
+                  "title": "Working Hours",
+                  "desc1": "Mon - Sat: 9:00 AM - 7:00 PM",
+                  "desc2": "Sunday: Closed"
+                },
+                {
+                  "icon": "FaHeadset",
+                  "title": "Need Urgent Help?",
+                  "desc1": "Call us anytime for",
+                  "desc2": "emergency webservice service."
+                },
+                {
+                  "icon": "FaFileAlt",
+                  "title": "Request a Quote",
+                  "desc1": "Get a free, no-obligation",
+                  "desc2": "estimate for your webservice needs."
+                }
+              ]
+            }
+          }
+        },
+        "enquiry": {
+          "variants": {
+            "WebserviceEnquiry1": {
+              "subtitle": "GET A QUOTE",
+              "title1": "Get a Quote for",
+              "title2": "Our Cleaning Services",
+              "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
+              "features": [
+                {
+                  "title": "Tailored to Your Needs",
+                  "description": "Get a quote based on your specific cleaning requirements."
+                },
+                {
+                  "title": "Quick & Easy",
+                  "description": "Fill out the form in just a few minutes."
+                },
+                {
+                  "title": "No Obligation",
+                  "description": "Receive a personalized quote with no commitment."
+                }
+              ],
+              "form": {
+                "title1": "Request a",
+                "title2": "Quote",
+                "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
+                "buttonText": "Submit Request ->",
+                "servicesList": [
+                  "Residential Cleaning",
+                  "Commercial Cleaning",
+                  "Post-Construction Cleaning",
+                  "Window Cleaning",
+                  "Carpet Cleaning",
+                  "Other"
+                ]
+              }
+            }
+          }
+        },
+        "Counter": {
+          "variants": {
+            "WebserviceCounter1": {
+              "items": [
+                {
+                  "id": "1",
+                  "icon": "FaUsers",
+                  "number": "500+",
+                  "label": "Happy Clients"
+                },
+                {
+                  "id": "2",
+                  "icon": "FaFileCode",
+                  "number": "850+",
+                  "label": "Projects Completed"
+                },
+                {
+                  "id": "3",
+                  "icon": "FaTrophy",
+                  "number": "10+",
+                  "label": "Years of Experience"
+                },
+                {
+                  "id": "4",
+                  "icon": "FaHandshake",
+                  "number": "95+",
+                  "label": "Client Satisfaction"
+                }
+              ]
+            }
+          }
+        },
+        "Technologies": {
+          "variants": {
+            "WebserviceTechnologies1": {
+              "subtitle": "TECHNOLOGIES WE USE",
+              "title1": "Technologies",
+              "title2": "We Use",
+              "description": "We work with modern and reliable technologies to deliver the best solutions for your business.",
+              "items": [
+                {
+                  "id": "1",
+                  "title": "HTML5",
+                  "image": "/technology/html5.webp"
+                },
+                {
+                  "id": "2",
+                  "title": "JavaScript",
+                  "image": "/technology/js.webp"
+                },
+                {
+                  "id": "3",
+                  "title": "React",
+                  "image": "/technology/react.webp"
+                },
+                {
+                  "id": "4",
+                  "title": "WordPress",
+                  "image": "/technology/wp.webp"
+                },
+                {
+                  "id": "5",
+                  "title": "PHP",
+                  "image": "/technology/php.webp"
+                },
+                {
+                  "id": "6",
+                  "title": "Laravel",
+                  "image": "/technology/laravel.webp"
+                },
+                {
+                  "id": "7",
+                  "title": "MySQL",
+                  "image": "/technology/sql.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Pricing": {
+          "variants": {
+            "WebservicePricing1": {
+              "subtitle": "// FLEXIBLE PRICING PLAN",
+              "title1": "We've Offered The Best",
+              "title2": "Pricing For You",
+              "description": "Choose a plan that fits your needs and budget. All plans include powerful features and dedicated support to help you grow.",
+              "plans": [
+                {
+                  "id": "plan-1",
+                  "name": "Basic Plan",
+                  "badge": "Basic Plan",
+                  "icon": "FaPaperPlane",
+                  "price": "149",
+                  "period": "/ Per Month",
+                  "description": "Perfect for individuals and small businesses getting started.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Choose Plan ->",
+                  "buttonUrl": "/contact"
+                },
+                {
+                  "id": "plan-2",
+                  "name": "Standard Plan",
+                  "badge": "Most Popular",
+                  "icon": "FaCrown",
+                  "price": "179",
+                  "period": "/ Per Month",
+                  "description": "Ideal for growing businesses that need more power and flexibility.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Choose Plan ->",
+                  "buttonUrl": "/contact",
+                  "isPopular": true
+                },
+                {
+                  "id": "plan-3",
+                  "name": "Premium Plan",
+                  "badge": "Premium Plan",
+                  "icon": "FaGem",
+                  "price": "199",
+                  "period": "/ Per Month",
+                  "description": "Advanced features for large businesses and high traffic websites.",
+                  "features": [
+                    "Branding and design Identity",
+                    "Web site Marketing Solutions",
+                    "Free 15 GB Linux Hosting",
+                    "24/7 system Monitoring",
+                    "Unlimited Download Data"
+                  ],
+                  "footerText": "Up to 10 users + 1.99 per user",
+                  "buttonText": "Choose Plan ->",
+                  "buttonUrl": "/contact"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Topbar": "WebserviceTopBar1",
+          "Header": "WebserviceHeader1",
+          "Footer": "WebserviceFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "HeroSection",
+                "component": "WebserviceHero1"
+              },
+              {
+                "key": "AboutUs",
+                "component": "WebserviceAboutUs1"
+              },
+              {
+                "key": "Services",
+                "component": "WebserviceServices1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "WebserviceTestimonials1"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "AboutUs",
+                "component": "WebserviceAboutUs1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "WebserviceWhyChooseUs1"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "Services",
+                "component": "WebserviceServices1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "WebserviceWhyChooseUs1"
+              }
+            ]
+          },
+          "gallery": {
+            "components": [
+              {
+                "key": "Gallery",
+                "component": "WebserviceGallery1"
+              },
+              {
+                "key": "VideoGallery",
+                "component": "WebserviceVideoGallery1"
+              }
+            ]
+          },
+          "faq": {
+            "components": [
+              {
+                "key": "Faq",
+                "component": "WebserviceFaq1"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Contact",
+                "component": "WebserviceContact1"
+              }
+            ]
+          },
+          "quote": {
+            "components": [
+              {
+                "key": "Quote",
+                "component": "WebserviceQuote1"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "about": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "AboutUs",
+        "Cta",
+        "Footer"
+      ]
+    }
+  }
+}
