@@ -2331,6 +2331,60 @@
               ]
             }
           }
+        },
+        "Quote": {
+          "variants": {
+            "WebserviceQuote1": {
+              "subtitle": "GET A QUOTE",
+              "title1": "Get a Quote for",
+              "title2": "Your Project",
+              "description": "Share your project requirements with us and our team will get back to you with the best solution and a customized quote as per your needs.",
+              "features": [
+                {
+                  "id": "qf1",
+                  "icon": "FaRegCommentDots",
+                  "title": "Quick Response",
+                  "description": "We reply to all enquiries within 24 hours."
+                },
+                {
+                  "id": "qf2",
+                  "icon": "FaRegFileAlt",
+                  "title": "Customized Solutions",
+                  "description": "Tailored to your business requirements."
+                },
+                {
+                  "id": "qf3",
+                  "icon": "FaShieldAlt",
+                  "title": "Transparent Pricing",
+                  "description": "No hidden charges, clear and detailed quotes."
+                },
+                {
+                  "id": "qf4",
+                  "icon": "FaHeadset",
+                  "title": "Dedicated Support",
+                  "description": "Our team is always here to help you."
+                }
+              ],
+              "image": "/about/about1.jpg",
+              "floatingBox": {
+                "icon": "FaChartBar",
+                "text1": "Let's Build",
+                "text2": "Your Next Project"
+              },
+              "form": {
+                "title": "Request a ",
+                "titleHighlight": "Free Quote",
+                "description": "Fill out the form below and our experts will get back to you soon with a customized quotation.",
+                "budgets": [
+                  "₹ Under 25,000",
+                  "₹ 25,000 - 50,000",
+                  "₹ 50,000 - 1,00,000",
+                  "₹ Above 1,00,000"
+                ],
+                "buttonText": "Get a Quote"
+              }
+            }
+          }
         }
       },
       "templateComponents": {
@@ -2431,6 +2485,16 @@
         "Header",
         "Breadcrumb",
         "AboutUs",
+        "Cta",
+        "Footer"
+      ]
+    },
+    "quote": {
+      "components": [
+        "TopBar",
+        "Header",
+        "Breadcrumb",
+        "Quote",
         "Cta",
         "Footer"
       ]

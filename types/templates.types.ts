@@ -420,6 +420,35 @@ export interface FaqData {
   faqs: FaqItem[];
 }
 
+
+export interface QuoteFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface QuoteData {
+  subtitle: string;
+  title1: string;
+  title2: string;
+  description: string;
+  features: QuoteFeature[];
+  image: string;
+  floatingBox: {
+    icon: string;
+    text1: string;
+    text2: string;
+  };
+  form: {
+    title: string;
+    titleHighlight: string;
+    description: string;
+    budgets: string[];
+    buttonText: string;
+  };
+}
+
 export interface WebserviceTemplateData {
   common: {
     aboutBreadcrumb?: any;
@@ -449,6 +478,7 @@ export interface WebserviceTemplateData {
         Blogs?: { variants?: { WebserviceBlogs1?: BlogsData } };
         whyChooseUs?: { variants?: { WebserviceWhyChooseUs1?: WhyChooseUsData } };
         contact?: { variants?: { WebserviceContact1?: ContactData } };
+        Quote?: { variants?: { WebserviceQuote1?: QuoteData } };
         enquiry?: { variants?: { WebserviceEnquiry1?: EnquiryData } };
       };
     };
