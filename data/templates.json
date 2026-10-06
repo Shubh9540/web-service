@@ -1,10 +1,10 @@
 {
   "common": {
     "Footer": {
-      "logoAlt": "BluePipe Logo",
-      "brandTitle": "BluePipe",
+      "logoAlt": "Weblance Logo",
+      "brandTitle": "Weblance",
       "copyrightText": "© 2026 Weblance. All Rights Reserved.Powered by Lestow",
-      "description": "At BluePipe, we provide reliable and professional webservice solutions for homes and businesses. From small repairs to complete installations, our team is committed to quality service and customer satisfaction.",
+      "description": "At Weblance, we provide reliable and professional webservice solutions for homes and businesses. From small repairs to complete installations, our team is committed to quality service and customer satisfaction.",
       "hoursTitle": "Working Hours",
       "hoursDays": "Mon - Sat:",
       "hours": "9:00 AM - 7:00 PM\nSunday: Closed",
