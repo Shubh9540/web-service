@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { QuoteData } from '@/types/templates.types';
 import {
   FaRegCommentDots,
@@ -41,6 +41,8 @@ const renderIcon = (iconName: string) => {
 };
 
 export const QuoteSection = ({ data }: { data?: QuoteData }) => {
+  const [selectedBudget, setSelectedBudget] = useState<number | null>(null);
+
   if (!data) return null;
 
   return (
@@ -201,10 +203,15 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
                     <FaBriefcase />
                   </span>
 
-                  <select className="w-full appearance-none rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
+                  <select className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
                     <option value="">
                       Select Service *
                     </option>
+                    <option value="web-development">Web Development</option>
+                    <option value="app-development">App Development</option>
+                    <option value="ui-ux-design">UI/UX Design</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="seo">SEO Optimization</option>
                   </select>
                 </div>
               </div>
@@ -245,18 +252,22 @@ Tell us about your project requirements...`}
                 </label>
 
                 <div className="flex flex-wrap gap-3">
-                  {data.form.budgets?.map((b, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      className={`rounded-[6px] border px-4 py-2 text-[12px] font-medium transition-colors ${i === 1
-                        ? 'border-[#0d65ff] bg-[#edf5ff] text-[#0d65ff]'
-                        : 'border-[#e4edfa] text-[#657187] hover:border-[#0d65ff] hover:text-[#0d65ff]'
-                        }`}
-                    >
-                      {b}
-                    </button>
-                  ))}
+                  {data.form.budgets?.map((b, i) => {
+                    const isSelected = selectedBudget === i;
+                    return (
+                      <button
+                        key={i}
+                        type="button"
+                        onClick={() => setSelectedBudget(isSelected ? null : i)}
+                        className={`rounded-[6px] border px-4 py-2 text-[12px] font-medium transition-colors ${isSelected
+                          ? 'border-[#0d65ff] bg-[#edf5ff] text-[#0d65ff]'
+                          : 'border-[#e4edfa] text-[#657187] hover:border-[#0d65ff] hover:text-[#0d65ff]'
+                          }`}
+                      >
+                        {b}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -269,10 +280,14 @@ Tell us about your project requirements...`}
                     <FaRegCalendarAlt />
                   </span>
 
-                  <select className="w-full appearance-none rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
+                  <select className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
                     <option value="">
                       Expected Timeline (Optional)
                     </option>
+                    <option value="less-than-1-month">Less than 1 month</option>
+                    <option value="1-3-months">1 to 3 months</option>
+                    <option value="3-6-months">3 to 6 months</option>
+                    <option value="more-than-6-months">More than 6 months</option>
                   </select>
                 </div>
 

@@ -31,7 +31,7 @@ export const ContactSection = ({ data }: { data?: ContactData }) => {
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8 relative z-10">
 
         {/* Top Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start mb-12">
 
           {/* Left: Contact Details */}
           <div className="flex flex-col lg:col-span-4">
@@ -113,7 +113,7 @@ export const ContactSection = ({ data }: { data?: ContactData }) => {
         </div>
 
         {/* Bottom Section: Contact Form */}
-        <div className="w-full max-w-[950px] mx-auto bg-white/70 backdrop-blur-xl rounded-[24px] shadow-[0_20px_60px_rgba(13,101,255,0.06)] border border-[#e4edfa] p-8 md:p-12 relative z-20">
+        <div className="w-full max-w-[950px] mx-auto bg-white/70 backdrop-blur-xl rounded-[24px] shadow-[0_20px_60px_rgba(13,101,255,0.06)] border border-[#e4edfa] p-6 md:p-8 relative z-20">
 
           <div className="text-center mb-10">
             <div className="mb-4 flex items-center justify-center gap-3">
@@ -128,21 +128,18 @@ export const ContactSection = ({ data }: { data?: ContactData }) => {
             </h2>
           </div>
 
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input type="text" placeholder="Your Name" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
-              <input type="email" placeholder="Your Email" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
-              <input type="text" placeholder="Subject" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
-              <input type="tel" placeholder="Your Phone Number" className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+          <form className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Name" className="w-full px-4 py-3 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="email" placeholder="Your Email" className="w-full px-4 py-3 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="text" placeholder="Subject" className="w-full px-4 py-3 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
+              <input type="tel" placeholder="Your Phone Number" className="w-full px-4 py-3 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all" />
             </div>
-            <textarea placeholder="Your Message" rows={6} className="w-full px-6 py-4 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all resize-none"></textarea>
+            <textarea placeholder="Your Message" rows={4} className="w-full px-4 py-3 bg-white border border-[#e4edfa] rounded-[12px] text-[14px] text-[#051024] placeholder:text-[#657187] focus:outline-none focus:border-[#0d65ff] focus:ring-4 focus:ring-[#0d65ff]/10 transition-all resize-none"></textarea>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-4">
-              <button type="submit" className="flex items-center justify-center gap-2 bg-[#0d65ff] hover:bg-[#0b56db] hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(13,101,255,0.3)] text-white font-bold py-4 px-10 rounded-[12px] transition-all duration-300 text-[15px] min-w-[200px]">
+            <div className="flex items-center justify-center pt-2">
+              <button type="submit" className="flex items-center justify-center gap-2 bg-[#0d65ff] hover:bg-[#0b56db] hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(13,101,255,0.3)] text-white font-bold py-3 px-8 rounded-[12px] transition-all duration-300 text-[15px] min-w-[200px]">
                 Send Message <FaArrowRight className="text-[12px]" />
-              </button>
-              <button type="reset" className="flex items-center justify-center bg-[#edf5ff] hover:bg-[#dce9fa] hover:-translate-y-1 text-[#0d65ff] font-bold py-4 px-10 rounded-[12px] transition-all duration-300 text-[15px] min-w-[140px]">
-                Reset
               </button>
             </div>
           </form>

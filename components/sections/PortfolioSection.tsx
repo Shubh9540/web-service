@@ -99,7 +99,7 @@ export const PortfolioSection = ({
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#f4f8ff] pt-12 pb-28 lg:pt-16 lg:pb-32">
+    <section className="relative w-full overflow-hidden bg-[#f4f8ff] pt-12 pb-12 lg:pt-16 lg:pb-16">
       {/* Background decoration */}
       <div className="pointer-events-none absolute left-0 top-0 h-[260px] w-[260px] rounded-full bg-[#edf5ff] blur-[80px]" />
 
@@ -222,16 +222,24 @@ export const PortfolioSection = ({
                 LEFT SLIDER
             ========================== */}
             <div className="relative overflow-hidden rounded-[20px] h-full">
-              <div className="h-full w-full">
-                <img
-                  key={`${activeTab}-${currentSlide}`}
-                  src={
-                    currentCategory.sliderImages?.[currentSlide] ||
-                    currentCategory.sliderImages?.[0]
-                  }
-                  alt={currentCategory.title}
-                  className="h-full w-full object-cover"
-                />
+              <div className="relative h-full w-full">
+                {currentCategory.sliderImages?.map((imgSrc: string, idx: number) => (
+                  <img
+                    key={`${activeTab}-${idx}`}
+                    src={imgSrc}
+                    alt={`${currentCategory.title} - ${idx + 1}`}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${
+                      currentSlide === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                    }`}
+                  />
+                )) || (
+                  <img
+                    key={activeTab}
+                    src={currentCategory.sliderImages?.[0]}
+                    alt={currentCategory.title}
+                    className="absolute inset-0 h-full w-full object-cover opacity-100 z-10"
+                  />
+                )}
               </div>
 
               {/* arrows */}
@@ -241,7 +249,7 @@ export const PortfolioSection = ({
                     type="button"
                     onClick={prevSlide}
                     aria-label="Previous slide"
-                    className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
+                    className="absolute left-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
                   >
                     <FaChevronLeft className="text-[14px]" />
                   </button>
@@ -250,7 +258,7 @@ export const PortfolioSection = ({
                     type="button"
                     onClick={nextSlide}
                     aria-label="Next slide"
-                    className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
+                    className="absolute right-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
                   >
                     <FaChevronRight className="text-[14px]" />
                   </button>

@@ -19,7 +19,7 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
   if (!data?.plans?.length) return null;
 
   return (
-    <section className="relative w-full bg-[#f4f8ff] pt-16 pb-28">
+    <section className="relative w-full bg-[#f4f8ff] pt-16 pb-12">
       {/* Background decoration */}
       <div className="pointer-events-none absolute left-0 top-0 h-[260px] w-[260px] rounded-full bg-[#edf5ff] blur-[80px]" />
       

@@ -71,34 +71,38 @@ const PortfolioItem = ({ cat, isEven }: { cat: any, isEven: boolean }) => {
 
   return (
     <div className="relative overflow-hidden rounded-[28px] border border-[#e4edfa] bg-white p-4 shadow-[0_12px_35px_rgba(28,72,135,0.08)] md:p-6">
-      <div className={`grid grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-[45%_55%] items-center`}>
+      <div className={`grid grid-cols-1 gap-6 lg:gap-10 lg:grid-cols-2 items-center`}>
         
         {/* Image Block with Slider */}
         <div className={`relative w-full h-[350px] lg:h-[450px] rounded-[20px] overflow-hidden ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-          <img
-            key={currentSlide}
-            src={images[currentSlide]}
-            alt={cat.title}
-            className="w-full h-full object-cover transition-opacity duration-500"
-          />
+          {images.map((imgSrc: string, idx: number) => (
+            <img
+              key={idx}
+              src={imgSrc}
+              alt={`${cat.title} - ${idx + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+                currentSlide === idx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+              }`}
+            />
+          ))}
           
           {images.length > 1 && (
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg hover:bg-[#0d65ff] hover:text-white transition-colors"
+                className="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg hover:bg-[#0d65ff] hover:text-white transition-colors"
               >
                 <FaChevronLeft className="text-[14px]" />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg hover:bg-[#0d65ff] hover:text-white transition-colors"
+                className="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg hover:bg-[#0d65ff] hover:text-white transition-colors"
               >
                 <FaChevronRight className="text-[14px]" />
               </button>
               
               {/* Slider dots */}
-              <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+              <div className="absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 gap-2">
                 {images.map((_: any, idx: number) => (
                   <button
                     key={idx}
@@ -112,7 +116,7 @@ const PortfolioItem = ({ cat, isEven }: { cat: any, isEven: boolean }) => {
         </div>
 
         {/* Content Block */}
-        <div className={`relative py-4 lg:py-8 px-2 lg:px-4 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+        <div className={`relative py-4 lg:py-8 px-4 lg:px-10 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
           <div className="mb-2 flex items-center gap-2">
             <span className="text-[15px] font-extrabold text-[#0d65ff]">//</span>
             <span className="text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#0d65ff]">
@@ -144,13 +148,6 @@ const PortfolioItem = ({ cat, isEven }: { cat: any, isEven: boolean }) => {
             ))}
           </div>
 
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-3 rounded-lg bg-[#0d65ff] px-6 py-3.5 text-[14px] font-bold text-white shadow-[0_8px_20px_rgba(13,101,255,0.20)] transition hover:bg-[#0756dc]"
-          >
-            Live Preview
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </Link>
         </div>
 
       </div>

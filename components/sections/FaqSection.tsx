@@ -10,7 +10,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
   if (!data?.faqs?.length) return null;
 
   return (
-    <section className="relative w-full bg-[#f4f8ff] pt-16 pb-28">
+    <section className="relative w-full bg-[#f4f8ff] pt-16 pb-12">
       {/* Background decoration */}
       <div className="pointer-events-none absolute left-[-60px] top-[40px] h-[300px] w-[300px] rounded-full bg-[#edf5ff] blur-[100px]" />
       

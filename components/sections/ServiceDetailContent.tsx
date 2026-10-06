@@ -55,24 +55,7 @@ export const ServiceDetailContent = ({ data, serviceId, servicesList }: { data?:
               </div>
             </div>
             
-            {/* Opening Hours */}
-            <div className="bg-[#f8fbfb] rounded-xl p-6 border border-gray-100">
-              <h3 className="text-xl font-bold text-[#051024] mb-6">Opening Hours</h3>
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-3 bg-white p-3.5 rounded-lg border border-gray-100 text-[13px] font-semibold text-gray-600">
-                  <FiClock className="text-[#0d65ff] shrink-0" /> Mon - Sat: 10.00 AM - 6.00 PM
-                </div>
-                <div className="flex items-center gap-3 bg-white p-3.5 rounded-lg border border-gray-100 text-[13px] font-semibold text-gray-600">
-                  <FiClock className="text-[#0d65ff] shrink-0" /> Sunday: 10.00 AM - 4.00 PM
-                </div>
-                <div className="flex items-center gap-3 bg-white p-3.5 rounded-lg border border-gray-100 text-[13px] font-semibold text-gray-600">
-                  <FiClock className="text-[#0d65ff] shrink-0" /> Friday: Closed
-                </div>
-                <div className="flex items-center gap-3 bg-white p-3.5 rounded-lg border border-gray-100 text-[13px] font-semibold text-gray-600">
-                  <FiClock className="text-[#0d65ff] shrink-0" /> Emergency: 24 Hours
-                </div>
-              </div>
-            </div>
+
 
             {/* Need Help CTA */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5] bg-gray-900 group">
@@ -94,10 +77,7 @@ export const ServiceDetailContent = ({ data, serviceId, servicesList }: { data?:
           {/* Right Side: Main Content */}
           <div className="w-full lg:w-[70%]">
              
-             {/* Internal Breadcrumb */}
-             <div className="text-[13px] text-gray-500 mb-5 flex items-center gap-2 font-medium">
-               Home <FiArrowRight className="text-[10px]" /> Our Services <FiArrowRight className="text-[10px]" /> <span className="text-[#0d65ff]">{data.title1}</span>
-             </div>
+
 
              {/* Title & Top Description */}
              <h1 className="text-[40px] md:text-[48px] font-extrabold text-[#051024] mb-3 leading-[1.1]">{data.title1}</h1>
@@ -237,7 +217,7 @@ export const ServiceDetailContent = ({ data, serviceId, servicesList }: { data?:
             {/* Video Iframe (Study-related placeholder) */}
             <iframe 
               className="w-full h-full"
-              src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=1" 
+              src="https://www.youtube.com/embed/0x5mf8BUJZY?autoplay=1" 
               title="Study Video" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

@@ -67,7 +67,7 @@ export const CounterSection = ({ data }: { data?: CounterData }) => {
   if (!data?.items?.length) return null;
 
   return (
-    <section className="relative z-20 mx-auto w-full max-w-[1300px] px-4 md:px-6 mt-12 mb-16 lg:mt-16 lg:mb-20">
+    <section className="relative z-20 mx-auto w-full max-w-[1300px] px-4 md:px-6 mt-6 mb-6 lg:mt-8 lg:mb-8">
       <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-r from-[#0d65ff] via-[#0056fb] to-[#0d65ff] py-10 px-8 shadow-[0_15px_40px_rgba(13,101,255,0.3)] lg:py-14">
         
         {/* Subtle background patterns */}

@@ -2228,8 +2228,8 @@
                     "Unlimited Download Data"
                   ],
                   "footerText": "Up to 10 users + 1.99 per user",
-                  "buttonText": "Choose Plan ->",
-                  "buttonUrl": "/contact"
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote"
                 },
                 {
                   "id": "plan-2",
@@ -2247,8 +2247,8 @@
                     "Unlimited Download Data"
                   ],
                   "footerText": "Up to 10 users + 1.99 per user",
-                  "buttonText": "Choose Plan ->",
-                  "buttonUrl": "/contact",
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote",
                   "isPopular": true
                 },
                 {
@@ -2267,8 +2267,8 @@
                     "Unlimited Download Data"
                   ],
                   "footerText": "Up to 10 users + 1.99 per user",
-                  "buttonText": "Choose Plan ->",
-                  "buttonUrl": "/contact"
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/quote"
                 }
               ]
             }

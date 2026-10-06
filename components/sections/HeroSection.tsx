@@ -64,8 +64,8 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
             aria-hidden="true"
             className="w-full h-full object-cover object-center"
           />
-          {/* Dark blue overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#384bff]/90 via-[#384bff]/65 to-[#384bff]/20" />
+          {/* Gradient overlay only on the left side behind the text */}
+          <div className="absolute top-0 left-0 bottom-0 w-full md:w-[70%] lg:w-[50%] bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
         </div>
       ))}
 
@@ -96,7 +96,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           </h1>
 
           {/* Description */}
-          <p className="text-sm sm:text-[15px] leading-relaxed text-white/70 max-w-[500px] mb-8">
+          <p className="text-sm sm:text-[15px] leading-relaxed text-white max-w-[500px] mb-8">
             {slide.description}
           </p>
 
