@@ -480,6 +480,7 @@ export interface WebserviceTemplateData {
         contact?: { variants?: { WebserviceContact1?: ContactData } };
         Quote?: { variants?: { WebserviceQuote1?: QuoteData } };
         enquiry?: { variants?: { WebserviceEnquiry1?: EnquiryData } };
+        Gallery?: { variants?: { WebserviceGallery1?: GalleryData } };
       };
     };
   };

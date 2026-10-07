@@ -18,19 +18,19 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
   };
 
   return (
-    <section className="bg-white pt-12 pb-12">
+    <section className="bg-white py-10 md:py-8">
       <div className="max-w-[1250px] mx-auto px-4 md:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#3f1956] text-white px-4 py-1.5 rounded-full text-xs font-semibold mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c099d8]"></span>
+            <div className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-1.5 rounded-full text-xs font-semibold mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
               {data.subtitle}
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c099d8]"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold text-[#051024] leading-tight mb-4">
-              {data.title1} <span className="text-[#3f1956]">{data.title2}</span>
+              {data.title1} <span className="text-[var(--color-primary)]">{data.title2}</span>
             </h2>
             <p className="text-gray-500 text-sm md:text-base">
               {data.description}
@@ -40,7 +40,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
           {!isPage && (
             <Link
               href={data.button.url}
-              className="inline-flex items-center gap-2 bg-[#3f1956] hover:bg-[#291038] text-white font-bold py-3.5 px-8 rounded-xl transition-colors shrink-0"
+              className="inline-flex items-center gap-2 bg-[var(--color-primary)] hover:opacity-90 text-white font-bold py-3.5 px-8 rounded-xl transition-opacity shrink-0"
             >
               {data.button.text}
               <FaArrowRight />
@@ -62,7 +62,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute bottom-4 left-4 bg-white text-[#3f1956] px-3 py-1.5 rounded-xl shadow-md text-xs font-bold flex items-center gap-2">
+                <div className="absolute bottom-4 left-4 bg-white text-[var(--color-primary)] px-3 py-1.5 rounded-xl shadow-md text-xs font-bold flex items-center gap-2">
                   <FaCalendarAlt />
                   {blog.date}
                 </div>
@@ -70,10 +70,10 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
 
               {/* Content Area */}
               <div className="p-6 md:p-8 flex flex-col flex-grow">
-                <h4 className="text-[#3f1956] text-xs font-bold uppercase mb-3 tracking-wide">
+                <h4 className="text-[var(--color-primary)] text-xs font-bold uppercase mb-3 tracking-wide">
                   {blog.category}
                 </h4>
-                <Link href={blog.url} className="group-hover:text-[#3f1956] transition-colors">
+                <Link href={blog.url} className="group-hover:text-[var(--color-primary)] transition-colors">
                   <h3 className="text-xl font-bold text-[#051024] leading-tight mb-3 line-clamp-2">
                     {blog.title}
                   </h3>
@@ -83,7 +83,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
                 </p>
                 <Link
                   href={blog.url}
-                  className="text-[#3f1956] font-bold text-sm flex items-center gap-2 mt-auto hover:text-[#291038] transition-colors"
+                  className="text-[var(--color-primary)] font-bold text-sm flex items-center gap-2 mt-auto hover:opacity-80 transition-opacity"
                 >
                   Read More
                   <FaArrowRight className="text-xs" />
@@ -98,7 +98,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
           <div className="mt-12 flex justify-center">
             <button
               onClick={handleLoadMore}
-              className="inline-flex items-center gap-2 bg-transparent border-2 border-[#3f1956] text-[#3f1956] hover:bg-[#3f1956] hover:text-white font-bold py-3.5 px-8 rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white font-bold py-3.5 px-8 rounded-xl transition-colors"
             >
               Load More
             </button>

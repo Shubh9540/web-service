@@ -11,6 +11,7 @@ import { ProcessSection } from '@/components/sections/ProcessSection';
 import { TechnologiesSection } from '@/components/sections/TechnologiesSection';
 import { TestimonialSection } from '@/components/sections/TestimonialSection';
 import { CtaSection } from '@/components/sections/CtaSection';
+import { GallerySection } from '@/components/sections/GallerySection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
@@ -32,6 +33,7 @@ export default function Home() {
       <ServicesSection data={sectionData.Services?.variants?.WebserviceServices1} isSlider={true} />
       <AboutUsSection data={sectionData.AboutUs?.variants?.WebserviceAboutUs1} />
       <PortfolioSection data={sectionData.Portfolio?.variants?.WebservicePortfolio1} />
+      <GallerySection data={sectionData.Gallery?.variants?.WebserviceGallery1} />
       <CounterSection data={sectionData.Counter?.variants?.WebserviceCounter1} />
       <ProcessSection data={sectionData.Process?.variants?.WebserviceProcess1} />
       <TechnologiesSection data={sectionData.Technologies?.variants?.WebserviceTechnologies1} />

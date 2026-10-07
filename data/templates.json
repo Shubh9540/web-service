@@ -1647,7 +1647,7 @@
               "subtitle": "Our Blog",
               "title1": "Latest News &",
               "title2": "Blogs",
-              "description": "Helpful tips, expert advice, and the latest updates on webservice services to keep your home and business running smoothly.",
+              "description": "Helpful tips, expert advice, and the latest updates on technology and development to keep your business running smoothly.",
               "button": {
                 "text": "View All Blogs",
                 "url": "/blog"
@@ -1655,312 +1655,312 @@
               "blogs": [
                 {
                   "id": "b1",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/app/1.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "5 Common Webservice Problems And How To Fix Them",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "5 Common Tech Problems And How To Fix Them",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/5-common-webservice-problems-and-how-to-fix-them",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b2",
-                  "image": "/blog/2.jpg",
+                  "image": "/portfolio/app/2.webp",
                   "date": "08 Jun 2026",
-                  "category": "MAINTENANCE",
-                  "title": "Essential Webservice Maintenance Tips For Your Home",
-                  "description": "Regular webservice maintenance can help prevent costly repairs. Discover easy tips to keep your webservice system in top condition.",
+                  "category": "TECH INSIGHTS",
+                  "title": "Essential Tech Maintenance Tips For Your Home",
+                  "description": "Regular tech maintenance can help prevent costly repairs. Discover easy tips to keep your tech system in top condition.",
                   "url": "/blog/essential-webservice-maintenance-tips-for-your-home",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b3",
-                  "image": "/blog/3.jpg",
+                  "image": "/portfolio/app/3.webp",
                   "date": "02 Jun 2026",
-                  "category": "WATER HEATERS",
-                  "title": "Signs Your Water Heater Needs Repair Or Replacement",
+                  "category": "TECH INSIGHTS",
+                  "title": "Signs Your System Needs Repair Or Replacement",
                   "description": "Is your water heater not working as it should? Here are the key signs to watch for and when it's time to call a professional.",
                   "url": "/blog/signs-your-water-heater-needs-repair-or-replacement",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b4",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/1.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "Top Signs You Need a Professional Plumber",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "Top Signs You Need a Professional Tech",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/top-signs-you-need-a-professional-plumber",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b5",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/2.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "How to Stop a Running Toilet Fast",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "How to Stop a Running System Fast",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/how-to-stop-a-running-toilet-fast",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b6",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/3.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "The Dangers of Chemical Drain Cleaners",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "The Dangers of System System Cleaners",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/the-dangers-of-chemical-drain-cleaners",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b7",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/app/1.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "Winterizing Your Home Webservice System",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "Winterizing Your Home Tech System",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/winterizing-your-home-webservice-system",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b8",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/app/2.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "Benefits of Upgrading to a Tankless Water Heater",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "Benefits of Upgrading to a Tankless System",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/benefits-of-upgrading-to-a-tankless-water-heater",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b9",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/app/3.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "What to Do During a Webservice Emergency",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "What to Do During a Tech Emergency",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/what-to-do-during-a-webservice-emergency",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b10",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/1.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
+                  "category": "TECH INSIGHTS",
                   "title": "Understanding Your Home Water Pressure",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/understanding-your-home-water-pressure",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b11",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/2.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "Simple Tips to Keep Your Drains Clean",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "Simple Tips to Keep Your Systems Clean",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/simple-tips-to-keep-your-drains-clean",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
                 },
                 {
                   "id": "b12",
-                  "image": "/blog/1.jpg",
+                  "image": "/portfolio/ui/3.webp",
                   "date": "12 Jun 2026",
-                  "category": "PLUMBING TIPS",
-                  "title": "How to Maintain Your Water Heater for Long Life",
-                  "description": "Learn about the most common webservice issues homeowners face and simple tips to fix them before they become major problems.",
+                  "category": "TECH INSIGHTS",
+                  "title": "How to Maintain Your System for Long Life",
+                  "description": "Learn about the most common tech issues homeowners face and simple tips to fix them before they become major problems.",
                   "url": "/blog/how-to-maintain-your-water-heater-for-long-life",
                   "content": {
-                    "intro": "Webservice issues can be inconvenient, costly, and disruptive to your daily routine. The good news is that most common webservice problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your webservice system in good condition and avoid unexpected repairs.",
+                    "intro": "Technology issues can be inconvenient, costly, and disruptive to your daily business operations. The good news is that most common IT problems can be prevented with simple maintenance and mindful habits. In this guide, we will share practical tips to keep your systems in good condition and avoid unexpected downtime.",
                     "sections": [
                       {
-                        "heading": "1. Be Mindful of What Goes Down the Drain",
-                        "text": "One of the most common causes of webservice problems is clogged drains. Avoid pouring grease, oil, coffee grounds, and food scraps down the kitchen sink. In bathrooms, keep hair, soap residue, and other debris out of the drains. Using drain strainers can help catch unwanted material and keep your pipes clear."
+                        "heading": "1. Keep Software Updated",
+                        "text": "One of the most common causes of IT problems is outdated software. Always keep your systems, plugins, and tools up to date."
                       },
                       {
-                        "heading": "2. Check for Leaks Regularly",
-                        "text": "Leaky faucets, pipes, or toilets may seem minor, but they can lead to bigger issues if left untreated. Check under sinks, around toilets, and near water heaters for any signs of moisture or leaks. Early detection can save water and prevent costly damage."
+                        "heading": "2. Check for Security Vulnerabilities",
+                        "text": "Security breaches can be devastating. Regularly audit your infrastructure and protect your data."
                       },
                       {
-                        "heading": "3. Maintain Your Water Heater",
-                        "text": "Your water heater works hard to provide hot water, so regular maintenance is key. Flush the tank at least once a year to remove sediment buildup, which can reduce efficiency and extend the lifespan of your unit."
+                        "heading": "3. Maintain Your Hardware",
+                        "text": "Your servers and devices work hard, so regular maintenance is key."
                       }
                     ]
                   }
@@ -1968,8 +1968,8 @@
               ],
               "sidebarCta": {
                 "title1": "Need Professional",
-                "title2": "Webservice Help?",
-                "description": "Our experienced team is ready to assist you with all your webservice needs. Get in touch today for a quick and reliable solution.",
+                "title2": "IT Support?",
+                "description": "Our experienced team is ready to assist you with all your IT needs. Get in touch today for a quick and reliable solution.",
                 "buttonText": "Enquire Now ->",
                 "buttonUrl": "/enquiry"
               }
@@ -2383,6 +2383,48 @@
                 ],
                 "buttonText": "Get a Quote"
               }
+            }
+          }
+        },
+        "Gallery": {
+          "variants": {
+            "WebserviceGallery1": {
+              "subtitle": "OUR GALLERY",
+              "title1": "Photo",
+              "title2": "Gallery",
+              "description": "A glimpse of our beautifully crafted digital products and solutions.",
+              "images": [
+                {
+                  "id": "img-1",
+                  "image": "/portfolio/app/1.webp",
+                  "alt": "Project 1"
+                },
+                {
+                  "id": "img-2",
+                  "image": "/portfolio/app/2.webp",
+                  "alt": "Project 2"
+                },
+                {
+                  "id": "img-3",
+                  "image": "/portfolio/app/3.webp",
+                  "alt": "Project 3"
+                },
+                {
+                  "id": "img-4",
+                  "image": "/portfolio/ui/1.webp",
+                  "alt": "Project 4"
+                },
+                {
+                  "id": "img-5",
+                  "image": "/portfolio/ui/2.webp",
+                  "alt": "Project 5"
+                },
+                {
+                  "id": "img-6",
+                  "image": "/portfolio/ui/3.webp",
+                  "alt": "Project 6"
+                }
+              ]
             }
           }
         }
