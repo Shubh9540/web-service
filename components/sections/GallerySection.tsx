@@ -12,13 +12,13 @@ export const GallerySection = ({ data }: { data?: GalleryData }) => {
         
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-[#a87b40] mb-4">
-            <span className="w-12 h-px bg-[#a87b40]/30"></span>
+          <div className="inline-flex items-center gap-4 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#d6aeb9] mb-4">
+            <span className="w-10 md:w-16 h-[1px] bg-[#d6aeb9]"></span>
             {data.subtitle}
-            <span className="w-12 h-px bg-[#a87b40]/30"></span>
+            <span className="w-10 md:w-16 h-[1px] bg-[#d6aeb9]"></span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#051024] mb-6">
-            {data.title1} <span className="text-[#a87b40]">{data.title2}</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#3f292b] mb-4 font-serif">
+            {data.title1} <span className="text-[#7f183c]">{data.title2}</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
             {data.description}
@@ -45,10 +45,10 @@ export const GallerySection = ({ data }: { data?: GalleryData }) => {
         <div className="mt-12 flex justify-center">
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 bg-[#8c1c43] hover:bg-[#6b1432] text-white font-bold py-3.5 px-8 rounded-md transition-colors"
+            className="inline-flex items-center gap-2 bg-[#7f183c] hover:opacity-90 text-white font-bold py-3 px-8 rounded transition-opacity"
           >
             View More Gallery
-            <FaArrowRight className="text-sm" />
+            <FaArrowRight className="text-xs font-normal" />
           </Link>
         </div>
 
