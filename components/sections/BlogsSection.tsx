@@ -29,7 +29,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
               {data.subtitle}
               <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-[#051024] leading-tight mb-4">
+            <h2 className="text-3xl md:text-5xl font-extrabold text-navy leading-tight mb-4">
               {data.title1} <span className="text-[var(--color-primary)]">{data.title2}</span>
             </h2>
             <p className="text-gray-500 text-sm md:text-base">
@@ -53,7 +53,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
           {visibleBlogs.map((blog) => (
             <div
               key={blog.id}
-              className="bg-white rounded-[24px] border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col group"
+              className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col group"
             >
               {/* Image Area */}
               <div className="relative h-60 w-full overflow-hidden">
@@ -74,7 +74,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
                   {blog.category}
                 </h4>
                 <Link href={blog.url} className="group-hover:text-[var(--color-primary)] transition-colors">
-                  <h3 className="text-xl font-bold text-[#051024] leading-tight mb-3 line-clamp-2">
+                  <h3 className="text-xl font-bold text-navy leading-tight mb-3 line-clamp-2">
                     {blog.title}
                   </h3>
                 </Link>
@@ -85,7 +85,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
                   href={blog.url}
                   className="text-[var(--color-primary)] font-bold text-sm flex items-center gap-2 mt-auto hover:opacity-80 transition-opacity"
                 >
-                  Read More
+                  {data.readMoreText}
                   <FaArrowRight className="text-xs" />
                 </Link>
               </div>
@@ -100,7 +100,7 @@ export const BlogsSection = ({ data, isPage = false }: { data?: BlogsData, isPag
               onClick={handleLoadMore}
               className="inline-flex items-center gap-2 bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white font-bold py-3.5 px-8 rounded-xl transition-colors"
             >
-              Load More
+              {data.loadMoreText}
             </button>
           </div>
         )}

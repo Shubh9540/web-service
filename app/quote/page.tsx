@@ -15,20 +15,13 @@ export default function QuotePage() {
   const sectionData = templateData?.categories?.Webservice?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   return (
     <main className="bg-white min-h-screen flex flex-col">
       <TopBar data={sectionData.TopBar?.variants?.WebserviceTopBar1} />
       <Header data={sectionData.Header?.variants?.WebserviceHeader1} />
-      <Breadcrumb data={{
-        title: "Get A Quotes",
-        bgImage: commonData.aboutBreadcrumb?.bgImage,
-        paths: [
-          { label: "Home", url: "/" },
-          { label: "Get A Quotes" }
-        ]
-      }} />
+      <Breadcrumb data={commonData.quoteBreadcrumb} />
       
       <QuoteSection data={sectionData.Quote?.variants?.WebserviceQuote1} />
       <CtaSection data={sectionData.Cta?.variants?.WebserviceCta1} />

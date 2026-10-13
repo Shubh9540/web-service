@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
-import { ServicesData } from '@/types/templates.types';
+import { ServiceItem, ServicesData } from '@/types/templates.types';
 import Link from 'next/link';
 import { FaArrowRight, FaArrowLeft, FaCode, FaCloud, FaShieldAlt, FaCog, FaServer, FaUsers, FaChartBar, FaMobileAlt } from 'react-icons/fa';
 
@@ -53,31 +53,31 @@ export const ServicesSection = ({ data, hideButton = false, isSlider = false }: 
     }
   };
 
-  const ServiceCard = ({ service }: { service: any }) => (
-    <div className="bg-white rounded-3xl border border-[#e5f0ff] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 xl:p-7 flex flex-col h-full hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
-      <div className="w-14 h-14 rounded-xl bg-[#f0f7ff] border border-[#e5f0ff] flex items-center justify-center text-[#0056fb] text-2xl mb-5">
+  const ServiceCard = ({ service }: { service: ServiceItem }) => (
+    <div className="bg-white rounded-3xl border border-primary-border shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 xl:p-7 flex flex-col h-full hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
+      <div className="w-14 h-14 rounded-xl bg-primary-surface border border-primary-border flex items-center justify-center text-brand-primary text-2xl mb-5">
         {renderIcon(service.icon)}
       </div>
       <Link href={service.url} className="group/text flex flex-col flex-grow cursor-pointer">
-        <h3 className="text-xl font-bold text-[#051024] group-hover/text:text-[#0056fb] transition-colors mb-3">
+        <h3 className="text-xl font-bold text-navy group-hover/text:text-brand-primary transition-colors mb-3">
           {service.title}
         </h3>
-        <p className="text-[#6b7280] text-[15px] leading-relaxed mb-5 flex-grow">
+        <p className="text-palette-text-light text-size-15 leading-relaxed mb-5 flex-grow">
           {service.description}
         </p>
       </Link>
-      <Link href={service.url} className="inline-flex items-center justify-center gap-2 border border-[#0056fb] rounded-full px-5 py-2 text-[#0056fb] font-semibold text-sm hover:bg-[#0056fb] hover:text-white transition-colors w-max mt-auto">
-        Read More
+      <Link href={service.url} className="inline-flex items-center justify-center gap-2 border border-brand-primary rounded-full px-5 py-2 text-brand-primary font-semibold text-sm hover:bg-brand-primary hover:text-white transition-colors w-max mt-auto">
+        {data.readMoreText}
         <FaArrowRight className="text-xs" />
       </Link>
     </div>
   );
 
   return (
-    <section className={`w-full py-12 relative overflow-hidden ${isSlider ? 'bg-[#f8fbff]' : 'bg-white'}`}>
+    <section className={`w-full py-12 relative overflow-hidden ${isSlider ? 'bg-section-light' : 'bg-white'}`}>
       {isSlider && (
         <div className="absolute top-0 right-0 w-full h-[300px] overflow-hidden pointer-events-none -z-10">
-          <div className="absolute -top-[400px] -right-[100px] w-[800px] h-[800px] bg-[#f0f5ff] rounded-full" />
+          <div className="absolute -top-[400px] -right-[100px] w-[800px] h-[800px] bg-glow-blue rounded-full" />
         </div>
       )}
 
@@ -87,18 +87,18 @@ export const ServicesSection = ({ data, hideButton = false, isSlider = false }: 
         <div className={`flex flex-col ${isSlider ? 'lg:flex-row lg:items-end lg:justify-between' : 'items-center text-center'} mb-12`}>
           <div className="max-w-[800px]">
             <div className={`flex items-center gap-4 mb-4 ${!isSlider && 'justify-center'}`}>
-              <div className="w-8 h-[2px] bg-[#0056fb]" />
-              <h4 className="text-[#0056fb] font-semibold text-sm tracking-widest uppercase">
+              <div className="w-8 h-0.5 bg-brand-primary" />
+              <h4 className="text-brand-primary font-semibold text-sm tracking-widest uppercase">
                 {data.subtitle}
               </h4>
-              <div className="w-8 h-[2px] bg-[#0056fb]" />
+              <div className="w-8 h-0.5 bg-brand-primary" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold leading-[1.2] text-[#051024]">
+            <h2 className="text-4xl md:text-5xl font-extrabold leading-[1.2] text-navy">
               {data.title1}{' '}
-              <span className="text-[#0056fb] block sm:inline">{data.title2}</span>
+              <span className="text-brand-primary block sm:inline">{data.title2}</span>
             </h2>
             {data.description && (
-              <p className="text-[#6b7280] mt-4 max-w-2xl text-[15px] leading-relaxed">
+              <p className="text-palette-text-light mt-4 max-w-2xl text-size-15 leading-relaxed">
                 {data.description}
               </p>
             )}
@@ -109,13 +109,13 @@ export const ServicesSection = ({ data, hideButton = false, isSlider = false }: 
             <div className="flex gap-4 mt-8 lg:mt-0">
               <button
                 onClick={prevSlide}
-                className="w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgb(0,0,0,0.05)] border border-[#e5f0ff] flex items-center justify-center text-[#0056fb] hover:bg-[#0056fb] hover:text-white transition-all"
+                className="w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgb(0,0,0,0.05)] border border-primary-border flex items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-all"
               >
                 <FaArrowLeft />
               </button>
               <button
                 onClick={nextSlide}
-                className="w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgb(0,55,255,0.2)] bg-[#0056fb] text-white hover:bg-[#0048d4] transition-all"
+                className="w-14 h-14 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgb(0,55,255,0.2)] bg-brand-primary text-white hover:bg-palette-primary-dark transition-all"
               >
                 <FaArrowRight />
               </button>

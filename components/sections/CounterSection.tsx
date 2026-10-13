@@ -68,7 +68,7 @@ export const CounterSection = ({ data }: { data?: CounterData }) => {
 
   return (
     <section className="relative z-20 mx-auto w-full max-w-[1300px] px-4 md:px-6 mt-6 mb-6 lg:mt-8 lg:mb-8">
-      <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-r from-[#0d65ff] via-[#0056fb] to-[#0d65ff] py-10 px-8 shadow-[0_15px_40px_rgba(13,101,255,0.3)] lg:py-14">
+      <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-r from-brand via-brand-primary to-brand py-10 px-8 shadow-[0_15px_40px_rgba(13,101,255,0.3)] lg:py-14">
         
         {/* Subtle background patterns */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-white/10 to-transparent opacity-30 blur-3xl"></div>
@@ -93,7 +93,7 @@ export const CounterSection = ({ data }: { data?: CounterData }) => {
             <div key={item.id} className="flex flex-col items-center justify-center px-4 text-center">
               
               {/* Icon */}
-              <div className="mb-3 md:mb-5 flex h-14 w-14 md:h-20 md:w-20 items-center justify-center rounded-full bg-white text-[24px] md:text-[32px] text-[#0d65ff] shadow-[0_8px_25px_rgba(255,255,255,0.25)] mx-auto">
+              <div className="mb-3 md:mb-5 flex h-14 w-14 md:h-20 md:w-20 items-center justify-center rounded-full bg-white text-size-24 md:text-size-32 text-brand shadow-[0_8px_25px_rgba(255,255,255,0.25)] mx-auto">
                 {renderIcon(item.icon)}
               </div>
               
@@ -103,7 +103,7 @@ export const CounterSection = ({ data }: { data?: CounterData }) => {
               </h3>
               
               {/* Label */}
-              <p className="text-[12px] sm:text-[15px] font-medium text-white/90 tracking-wide">
+              <p className="text-size-12 sm:text-size-15 font-medium text-white/90 tracking-wide">
                 {item.label}
               </p>
               

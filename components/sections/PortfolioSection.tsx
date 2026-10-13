@@ -99,15 +99,15 @@ export const PortfolioSection = ({
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#f4f8ff] pt-12 pb-12 lg:pt-16 lg:pb-16">
+    <section className="relative w-full overflow-hidden bg-section-blue pt-12 pb-12 lg:pt-16 lg:pb-16">
       {/* Background decoration */}
-      <div className="pointer-events-none absolute left-0 top-0 h-[260px] w-[260px] rounded-full bg-[#edf5ff] blur-[80px]" />
+      <div className="pointer-events-none absolute left-0 top-0 h-[260px] w-[260px] rounded-full bg-surface-blue blur-[80px]" />
 
-      <div className="pointer-events-none absolute right-[-60px] top-[20px] grid grid-cols-6 gap-[10px] opacity-50">
+      <div className="pointer-events-none absolute right-[-60px] top-5 grid grid-cols-6 gap-2.5 opacity-50">
         {Array.from({ length: 30 }).map((_, i) => (
           <span
             key={i}
-            className="h-[4px] w-[4px] rounded-full bg-[#b7d3ff]"
+            className="h-1 w-1 rounded-full bg-dot-blue"
           />
         ))}
       </div>
@@ -119,19 +119,19 @@ export const PortfolioSection = ({
           <div className="mb-10 text-center">
             {data.subtitle && (
               <div className="mb-3 flex items-center justify-center gap-3">
-                <span className="h-px w-8 bg-[#0f67ff]" />
+                <span className="h-px w-8 bg-blue-bright" />
 
-                <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#0f67ff]">
+                <span className="text-size-12 font-bold uppercase tracking-[0.18em] text-blue-bright">
                   {data.subtitle}
                 </span>
 
-                <span className="h-px w-8 bg-[#0f67ff]" />
+                <span className="h-px w-8 bg-blue-bright" />
               </div>
             )}
 
-            <h2 className="text-[32px] font-extrabold leading-tight text-[#07142c] md:text-[42px]">
+            <h2 className="text-size-32 font-extrabold leading-tight text-heading md:text-size-42">
               {data.title1}{' '}
-              <span className="text-[#0d65ff]">{data.title2}</span>
+              <span className="text-brand">{data.title2}</span>
             </h2>
           </div>
         )}
@@ -158,8 +158,8 @@ export const PortfolioSection = ({
                   transition-all
                   duration-300
                   ${isActive
-                    ? 'border-[#0d65ff] bg-[#0d65ff] text-white shadow-[0_12px_30px_rgba(13,101,255,0.20)]'
-                    : 'border-[#dde7f5] bg-white text-[#101b32] shadow-[0_5px_20px_rgba(25,60,110,0.05)]'
+                    ? 'border-brand bg-brand text-white shadow-[0_12px_30px_rgba(13,101,255,0.20)]'
+                    : 'border-border-cool bg-white text-navy-soft shadow-[0_5px_20px_rgba(25,60,110,0.05)]'
                   }
                 `}
               >
@@ -178,23 +178,23 @@ export const PortfolioSection = ({
                     justify-center
                     rounded-full
                     border
-                    text-[25px]
+                    text-size-25
                     shadow-[0_4px_16px_rgba(40,100,180,0.12)]
                     ${isActive
-                      ? 'border-white bg-white text-[#0d65ff]'
-                      : 'border-[#e2ebf7] bg-white text-[#0d65ff]'
+                      ? 'border-white bg-white text-brand'
+                      : 'border-border-blue bg-white text-brand'
                     }
                   `}
                 >
                   {renderIcon(cat.icon)}
                 </div>
 
-                <span className="block whitespace-nowrap text-[14px] font-bold">
+                <span className="block whitespace-nowrap text-size-14 font-bold">
                   {cat.label}
                 </span>
 
                 {isActive && (
-                  <span className="absolute bottom-[-8px] left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 bg-[#0d65ff]" />
+                  <span className="absolute bottom-[-8px] left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 bg-brand" />
                 )}
               </button>
             );
@@ -204,14 +204,14 @@ export const PortfolioSection = ({
         {/* =========================
             MAIN PORTFOLIO BOX
         ========================== */}
-        <div className="relative overflow-hidden rounded-[28px] border border-[#e4edfa] bg-white px-4 pb-4 pt-12 shadow-[0_12px_35px_rgba(28,72,135,0.08)] md:px-6 md:pb-6 md:pt-12 lg:px-8">
+        <div className="relative overflow-hidden rounded-[28px] border border-border-soft bg-white px-4 pb-4 pt-12 shadow-[0_12px_35px_rgba(28,72,135,0.08)] md:px-6 md:pb-6 md:pt-12 lg:px-8">
 
           {/* subtle dots left */}
-          <div className="pointer-events-none absolute left-[-8px] top-[90px] grid grid-cols-3 gap-[10px] opacity-60">
+          <div className="pointer-events-none absolute left-[-8px] top-[90px] grid grid-cols-3 gap-2.5 opacity-60">
             {Array.from({ length: 18 }).map((_, i) => (
               <span
                 key={i}
-                className="h-[4px] w-[4px] rounded-full bg-[#a5caff]"
+                className="h-1 w-1 rounded-full bg-blue-light"
               />
             ))}
           </div>
@@ -248,19 +248,19 @@ export const PortfolioSection = ({
                   <button
                     type="button"
                     onClick={prevSlide}
-                    aria-label="Previous slide"
-                    className="absolute left-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
+                    aria-label={data.previousSlideLabel}
+                    className="absolute left-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand shadow-lg transition hover:bg-brand hover:text-white"
                   >
-                    <FaChevronLeft className="text-[14px]" />
+                    <FaChevronLeft className="text-size-14" />
                   </button>
 
                   <button
                     type="button"
                     onClick={nextSlide}
-                    aria-label="Next slide"
-                    className="absolute right-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#0d65ff] shadow-lg transition hover:bg-[#0d65ff] hover:text-white"
+                    aria-label={data.nextSlideLabel}
+                    className="absolute right-3 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white text-brand shadow-lg transition hover:bg-brand hover:text-white"
                   >
-                    <FaChevronRight className="text-[14px]" />
+                    <FaChevronRight className="text-size-14" />
                   </button>
 
                 </>
@@ -275,20 +275,16 @@ export const PortfolioSection = ({
               {/* text area */}
               <div className="relative z-10 max-w-[58%] max-lg:max-w-full">
                 <div className="mb-2 flex items-center gap-2">
-                  <span className="text-[15px] font-extrabold text-[#0d65ff]">
-                    //
-                  </span>
-
-                  <span className="text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#0d65ff]">
-                    {currentCategory.subtitle?.replace('//', '').trim()}
+                  <span className="text-size-11 font-extrabold uppercase tracking-[0.04em] text-brand">
+                    {currentCategory.subtitle}
                   </span>
                 </div>
 
-                <h3 className="mb-3 text-[28px] font-extrabold leading-[1.05] text-[#07142c] md:text-[34px]">
+                <h3 className="mb-3 text-size-28 font-extrabold leading-[1.05] text-heading md:text-size-34">
                   {currentCategory.title}
                 </h3>
 
-                <p className="mb-5 max-w-[500px] text-[13px] leading-[1.65] text-[#657187]">
+                <p className="mb-5 max-w-[500px] text-size-13 leading-[1.65] text-muted">
                   {currentCategory.description}
                 </p>
 
@@ -297,17 +293,17 @@ export const PortfolioSection = ({
                   {currentCategory.features?.map((feat) => (
                     <div key={feat.id} className="flex items-start gap-3">
 
-                      <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] bg-[#edf5ff] text-[18px] text-[#0d65ff]">
+                      <div className="flex h-[42px] w-[42px] shrink-0 items-center justify-center rounded-[10px] bg-surface-blue text-size-18 text-brand">
                         {renderIcon(feat.icon)}
                       </div>
 
-                      <div className="pt-[2px]">
-                        <h4 className="text-[13px] font-extrabold leading-[1.25] text-[#111c33]">
+                      <div className="pt-0.5">
+                        <h4 className="text-size-13 font-extrabold leading-[1.25] text-heading-soft">
                           {feat.title}
                         </h4>
 
                         {feat.description && (
-                          <p className="mt-1 text-[11px] leading-[1.45] text-[#788396]">
+                          <p className="mt-1 text-size-11 leading-[1.45] text-muted-2">
                             {feat.description}
                           </p>
                         )}
@@ -323,19 +319,19 @@ export const PortfolioSection = ({
                     items-center
                     gap-3
                     rounded-[9px]
-                    bg-[#0d65ff]
+                    bg-brand
                     px-6
                     py-3
-                    text-[13px]
+                    text-size-13
                     font-bold
                     text-white
                     shadow-[0_8px_20px_rgba(13,101,255,0.20)]
                     transition
-                    hover:bg-[#0756dc]
+                    hover:bg-blue-deep
                   "
                 >
                   {currentCategory.button.text.replace('->', '').trim()}
-                  <FaArrowRight className="text-[12px]" />
+                  <FaArrowRight className="text-size-12" />
                 </Link>
               </div>
 
@@ -351,7 +347,7 @@ export const PortfolioSection = ({
               )}
 
               {/* circular dotted decoration */}
-              <div className="pointer-events-none absolute right-[5%] top-[8%] hidden h-[260px] w-[260px] rounded-full border border-dashed border-[#cfe0ff] lg:block" />
+              <div className="pointer-events-none absolute right-[5%] top-[8%] hidden h-[260px] w-[260px] rounded-full border border-dashed border-dash-blue lg:block" />
 
             </div>
           </div>

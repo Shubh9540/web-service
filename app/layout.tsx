@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import rawData from "@/data/templates.json";
+import { WebserviceTemplateData } from "@/types/templates.types";
+
+const templateData: WebserviceTemplateData = rawData;
+const siteMetadata = templateData.common.siteMetadata;
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -9,12 +14,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Webservice Services",
-  description: "Professional webservice services for your home and office.",
+  title: siteMetadata.title,
+  description: siteMetadata.description,
   icons: {
-    icon: '/main logo/header-logo.png',
-    shortcut: '/main logo/header-logo.png',
-    apple: '/main logo/header-logo.png',
+    icon: siteMetadata.icon,
+    shortcut: siteMetadata.icon,
+    apple: siteMetadata.icon,
   },
 };
 

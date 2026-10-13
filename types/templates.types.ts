@@ -11,6 +11,19 @@ export interface HeaderNavLink {
   url: string;
 }
 
+export interface BreadcrumbData {
+  title: string;
+  paths: { label: string; url?: string }[];
+  bgImage: string;
+  separator: string;
+}
+
+export interface SelectOption {
+  id: string;
+  label: string;
+  value: string;
+}
+
 export interface HeaderData {
   logo: string;
   logoAlt: string;
@@ -51,10 +64,14 @@ export interface HeroData {
   image3: string;
   button: { text: string; url: string };
   slides?: HeroSlide[];
+  nextSlideLabel: string;
+  previousSlideLabel: string;
+  goToSlideLabel: string;
 }
 
 export interface AboutUsData {
   subtitle: string;
+  subtitlePrefix: string;
   title1: string;
   title2: string;
   description: string;
@@ -73,6 +90,9 @@ export interface AboutUsData {
   imageSmall2: string;
   badgeText1?: string;
   badgeText2?: string;
+  imageMainAlt: string;
+  imageSmallAlt: string;
+  watermarkText: string;
 }
 
 export interface ServiceItem {
@@ -96,7 +116,7 @@ export interface ProcessData {
   subtitle: string;
   title1: string;
   title2: string;
-  description?: string;
+  description: string;
   bgImage: string;
   steps: ProcessItem[];
 }
@@ -108,6 +128,7 @@ export interface ServicesData {
   description: string;
   services: ServiceItem[];
   button: { text: string; url: string };
+  readMoreText: string;
 }
 
 export interface ServiceDetailFeature {
@@ -167,9 +188,11 @@ export interface TestimonialsData {
   title2: string;
   description: string;
   testimonials: TestimonialItem[];
+  quoteMark: string;
 }
 
 export interface FooterData {
+  logo: string;
   logoAlt: string;
   brandTitle: string;
   copyrightText: string;
@@ -182,6 +205,10 @@ export interface FooterData {
   servicesLinks: { id: string; label: string; url: string }[];
   contactInfo: { address: string; phone: string; email: string };
   instagram: string[];
+  quickLinksTitle: string;
+  servicesTitle: string;
+  contactTitle: string;
+  scrollTopLabel: string;
 }
 
 export interface WhyChooseUsFeature {
@@ -201,6 +228,7 @@ export interface WhyChooseUsData {
   imageMain: string;
   badgeTitle: string;
   badgeText: string;
+  imageAlt: string;
 }
 
 export interface GalleryItem {
@@ -215,6 +243,7 @@ export interface GalleryData {
   title2: string;
   description: string;
   images: GalleryItem[];
+  button: { text: string; url: string };
 }
 
 export interface VideoItem {
@@ -254,9 +283,17 @@ export interface ContactData {
     description: string;
     buttonText: string;
     servicesList: string[];
+    subtitle: string;
+    titleHighlight: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    subjectPlaceholder: string;
+    phonePlaceholder: string;
+    messagePlaceholder: string;
   };
   mapUrl: string;
   image?: string;
+  imageAlt: string;
   infoBoxes?: {
     icon: string;
     title: string;
@@ -271,6 +308,7 @@ export interface EnquiryData {
   title2: string;
   description: string;
   features: {
+    id: string;
     title: string;
     description: string;
   }[];
@@ -280,6 +318,13 @@ export interface EnquiryData {
     description: string;
     buttonText: string;
     servicesList: string[];
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    servicePlaceholder: string;
+    datePlaceholder: string;
+    subjectPlaceholder: string;
+    messagePlaceholder: string;
   };
 }
 
@@ -324,6 +369,13 @@ export interface BlogsData {
     buttonText: string;
     buttonUrl: string;
   };
+  detailUI: {
+    authorLabel: string;
+    readTimeLabel: string;
+    recentBlogsTitle: string;
+  };
+  readMoreText: string;
+  loadMoreText: string;
 }
 
 export interface PortfolioFeature {
@@ -379,6 +431,8 @@ export interface PortfolioData {
   title1: string;
   title2: string;
   categories: PortfolioCategory[];
+  previousSlideLabel: string;
+  nextSlideLabel: string;
 }
 
 export interface PricingPlan {
@@ -402,6 +456,7 @@ export interface PricingData {
   title2: string;
   description: string;
   plans: PricingPlan[];
+  currencySymbol: string;
 }
 
 
@@ -417,6 +472,7 @@ export interface FaqData {
   title2: string;
   description: string;
   image: string;
+  imageAlt: string;
   faqs: FaqItem[];
 }
 
@@ -435,6 +491,7 @@ export interface QuoteData {
   description: string;
   features: QuoteFeature[];
   image: string;
+  imageAlt: string;
   floatingBox: {
     icon: string;
     text1: string;
@@ -446,20 +503,93 @@ export interface QuoteData {
     description: string;
     budgets: string[];
     buttonText: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    servicePlaceholder: string;
+    serviceOptions: SelectOption[];
+    companyPlaceholder: string;
+    projectPlaceholder: string;
+    budgetLabel: string;
+    timelinePlaceholder: string;
+    timelineOptions: SelectOption[];
+    locationPlaceholder: string;
+    consentLabel: string;
   };
+}
+
+export interface ServiceDetailUIData {
+  helpTitle1: string;
+  helpTitle2: string;
+  helpDescription: string;
+  helpPhone: string;
+  helpPhoneUrl: string;
+  helpImage: string;
+  helpImageAlt: string;
+  benefitsTitle: string;
+  benefits: { id: string; title: string; description: string; icon: string }[];
+  choiceTitle: string;
+  choiceFeatures: { id: string; title: string; description: string; icon: string }[];
+  processImageAlt: string;
+  videoUrl: string;
+  videoTitle: string;
+  closeVideoLabel: string;
+}
+
+export interface NotFoundData {
+  code: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface GlobalUIData {
+  serviceDetail: ServiceDetailUIData;
+  notFound: NotFoundData;
+}
+
+export interface SiteMetadataData {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface TemplateComponentEntry {
+  key: string;
+  component: string;
+}
+
+export interface TemplateComponentsData {
+  shared: Record<string, string>;
+  pages: Record<string, { components: TemplateComponentEntry[] }>;
+}
+
+export interface PageRegistryItem {
+  route?: string;
+  components: string[];
 }
 
 export interface WebserviceTemplateData {
   common: {
-    aboutBreadcrumb?: any;
-    servicesBreadcrumb?: any;
-    contactBreadcrumb?: any;
-    enquiryBreadcrumb?: any;
-    Footer?: FooterData;
+    siteMetadata: SiteMetadataData;
+    aboutBreadcrumb: BreadcrumbData;
+    servicesBreadcrumb: BreadcrumbData;
+    serviceDetailBreadcrumb: BreadcrumbData;
+    contactBreadcrumb: BreadcrumbData;
+    enquiryBreadcrumb: BreadcrumbData;
+    portfolioBreadcrumb: BreadcrumbData;
+    pricingBreadcrumb: BreadcrumbData;
+    faqBreadcrumb: BreadcrumbData;
+    quoteBreadcrumb: BreadcrumbData;
+    blogBreadcrumb: BreadcrumbData;
+    blogDetailBreadcrumb: BreadcrumbData;
+    globalUI: GlobalUIData;
+    Footer: FooterData;
   };
   categories: {
     Webservice: {
-      templateComponents?: any;
+      templateComponents?: TemplateComponentsData;
       sections: {
         TopBar?: { variants?: { WebserviceTopBar1?: TopBarData } };
         Header?: { variants?: { WebserviceHeader1?: HeaderData } };
@@ -484,4 +614,5 @@ export interface WebserviceTemplateData {
       };
     };
   };
+  pages: Record<string, PageRegistryItem>;
 }

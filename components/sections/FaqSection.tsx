@@ -10,9 +10,9 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
   if (!data?.faqs?.length) return null;
 
   return (
-    <section className="relative w-full bg-[#f4f8ff] pt-16 pb-12">
+    <section className="relative w-full bg-section-blue pt-16 pb-12">
       {/* Background decoration */}
-      <div className="pointer-events-none absolute left-[-60px] top-[40px] h-[300px] w-[300px] rounded-full bg-[#edf5ff] blur-[100px]" />
+      <div className="pointer-events-none absolute left-[-60px] top-10 h-[300px] w-[300px] rounded-full bg-surface-blue blur-[100px]" />
       
       <div className="relative z-10 mx-auto w-full max-w-[1250px] px-4 md:px-6">
         
@@ -22,18 +22,18 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
           <div className="relative pt-6">
             {data.subtitle && (
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-[#0f67ff]" />
-                <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#0f67ff]">
+                <span className="h-px w-8 bg-blue-bright" />
+                <span className="text-size-12 font-bold uppercase tracking-[0.18em] text-blue-bright">
                   {data.subtitle}
                 </span>
               </div>
             )}
             
-            <h2 className="mb-6 text-[36px] font-extrabold leading-[1.15] text-[#07142c] md:text-[46px] whitespace-pre-line">
-              {data.title1}{'\n'}<span className="text-[#0d65ff]">{data.title2}</span>
+            <h2 className="mb-6 text-size-36 font-extrabold leading-[1.15] text-heading md:text-size-46 whitespace-pre-line">
+              {data.title1}{'\n'}<span className="text-brand">{data.title2}</span>
             </h2>
             
-            <p className="mb-10 text-[15px] leading-relaxed text-[#657187]">
+            <p className="mb-10 text-size-15 leading-relaxed text-muted">
               {data.description}
             </p>
             
@@ -41,7 +41,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
             <div className="relative w-full max-w-[500px]">
               <img 
                 src="/portfolio/data analysis/1.webp" 
-                alt="FAQ Illustration" 
+                alt={data.imageAlt}
                 className="w-full h-auto object-contain rounded-2xl shadow-sm"
               />
             </div>
@@ -55,19 +55,19 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
               return (
                 <div 
                   key={faq.id} 
-                  className={`flex flex-col overflow-hidden rounded-[12px] shadow-[0_4px_20px_rgba(20,60,120,0.04)] transition-all duration-300 ${isOpen ? 'border border-[#0d65ff]' : 'border border-[#e4edfa]'}`}
+                  className={`flex flex-col overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(20,60,120,0.04)] transition-all duration-300 ${isOpen ? 'border border-brand' : 'border border-border-soft'}`}
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     className={`flex items-center justify-between px-6 py-5 text-left transition-colors duration-300 ${
-                      isOpen ? 'bg-[#0d65ff] text-white' : 'bg-white text-[#111c33] hover:bg-[#fafbff]'
+                      isOpen ? 'bg-brand text-white' : 'bg-white text-heading-soft hover:bg-hover-white'
                     }`}
                   >
-                    <span className="text-[15px] font-bold leading-tight pr-4">
+                    <span className="text-size-15 font-bold leading-tight pr-4">
                       {faq.question}
                     </span>
-                    <span className={`flex shrink-0 transition-transform duration-300 ${isOpen ? 'text-white rotate-180' : 'text-[#0d65ff]'}`}>
-                      <FaChevronDown className="text-[12px]" />
+                    <span className={`flex shrink-0 transition-transform duration-300 ${isOpen ? 'text-white rotate-180' : 'text-brand'}`}>
+                      <FaChevronDown className="text-size-12" />
                     </span>
                   </button>
 
@@ -77,7 +77,7 @@ export const FaqSection = ({ data }: { data?: FaqData }) => {
                     }`}
                   >
                     <div className="overflow-hidden bg-white">
-                      <div className="px-6 py-5 text-[14px] leading-relaxed text-[#657187] border-t border-[#f0f4fa]">
+                      <div className="px-6 py-5 text-size-14 leading-relaxed text-muted border-t border-border-faint">
                         {faq.answer}
                       </div>
                     </div>

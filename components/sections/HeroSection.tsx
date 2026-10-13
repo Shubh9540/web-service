@@ -50,7 +50,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
   const slide = slides[current];
 
   return (
-    <section className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center overflow-hidden bg-[#384bff]">
+    <section className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center overflow-hidden bg-indigo">
       
       {/* Background Images — all mounted, we switch opacity */}
       {slides.map((s, i) => (
@@ -84,19 +84,19 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           {/* Subtitle tag */}
           <div className="flex items-center gap-3 mb-5">
             <span className="h-px w-10 bg-white/60" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/80">
+            <span className="text-size-11 font-semibold uppercase tracking-[0.3em] text-white/80">
               {slide.subtitle}
             </span>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-[62px] font-extrabold leading-[1.05] tracking-tight text-white mb-5">
+          <h1 className="text-4xl sm:text-5xl lg:text-size-62 font-extrabold leading-[1.05] tracking-tight text-white mb-5">
             <span className="block">{slide.title1}</span>
             <span className="block">{slide.title2}</span>
           </h1>
 
           {/* Description */}
-          <p className="text-sm sm:text-[15px] leading-relaxed text-white max-w-[500px] mb-8">
+          <p className="text-sm sm:text-size-15 leading-relaxed text-white max-w-[500px] mb-8">
             {slide.description}
           </p>
 
@@ -104,7 +104,7 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href={slide.primaryButton.url}
-              className="inline-flex items-center gap-3 rounded-full bg-[#0056fb] hover:bg-[#0048d4] px-8 py-3.5 text-sm font-semibold text-white transition-colors"
+              className="inline-flex items-center gap-3 rounded-full bg-brand-primary hover:bg-palette-primary-dark px-8 py-3.5 text-sm font-semibold text-white transition-colors"
             >
               {slide.primaryButton.text}
               <FaArrowRight className="text-xs" />
@@ -126,15 +126,15 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
       <div className="absolute right-5 lg:right-10 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-3">
         <button
           onClick={handleNext}
-          aria-label="Next slide"
-          className="w-12 h-12 rounded-full border border-white/30 bg-white/10 hover:bg-[#0056fb] hover:border-[#0056fb] flex items-center justify-center text-white transition-all duration-300"
+          aria-label={data.nextSlideLabel}
+          className="w-12 h-12 rounded-full border border-white/30 bg-white/10 hover:bg-brand-primary hover:border-brand-primary flex items-center justify-center text-white transition-all duration-300"
         >
           <FaArrowRight className="text-sm" />
         </button>
         <button
           onClick={handlePrev}
-          aria-label="Previous slide"
-          className="w-12 h-12 rounded-full border border-white/30 bg-white/10 hover:bg-[#0056fb] hover:border-[#0056fb] flex items-center justify-center text-white transition-all duration-300"
+          aria-label={data.previousSlideLabel}
+          className="w-12 h-12 rounded-full border border-white/30 bg-white/10 hover:bg-brand-primary hover:border-brand-primary flex items-center justify-center text-white transition-all duration-300"
         >
           <FaArrowLeft className="text-sm" />
         </button>
@@ -146,10 +146,10 @@ export const HeroSection = ({ data }: { data?: HeroData }) => {
           <button
             key={i}
             onClick={() => goTo(i, i > current ? 'next' : 'prev')}
-            aria-label={`Go to slide ${i + 1}`}
+            aria-label={`${data.goToSlideLabel} ${i + 1}`}
             className={`transition-all duration-300 rounded-full ${
               i === current
-                ? 'w-8 h-2 bg-[#0056fb]'
+                ? 'w-8 h-2 bg-brand-primary'
                 : 'w-2 h-2 bg-white/40 hover:bg-white/70'
             }`}
           />

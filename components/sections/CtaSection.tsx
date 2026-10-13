@@ -11,7 +11,7 @@ export const CtaSection = ({ data }: { data?: CtaData }) => {
       <div className="max-w-[1300px] mx-auto px-4 md:px-8 relative z-10">
         
         {/* Container */}
-        <div className="relative rounded-[20px] overflow-hidden bg-gradient-to-r from-[#0056fb] to-[#003bb5] shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
+        <div className="relative rounded-[20px] overflow-hidden bg-gradient-to-r from-brand-primary to-gradient-blue shadow-[0_15px_40px_rgba(0,0,0,0.2)]">
           
           {/* Background Overlay Elements */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -39,28 +39,28 @@ export const CtaSection = ({ data }: { data?: CtaData }) => {
             {/* Text Content */}
             <div className="flex-1">
               <div className="flex items-center gap-4 mb-3 justify-center md:justify-start">
-                <div className="w-8 h-[1px] bg-white/70"></div>
-                <span className="text-white/90 font-medium text-[10px] md:text-xs tracking-widest uppercase">
-                  CONTACT US
+                <div className="w-8 h-px bg-white/70"></div>
+                <span className="text-white/90 font-medium text-size-10 md:text-xs tracking-widest uppercase">
+                  {data.subtitle}
                 </span>
               </div>
               
-              <h2 className="text-[26px] leading-[1.2] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-1">
-                <span className="text-[#ffb800]">24/7</span> Expert Support
+              <h2 className="text-size-26 leading-[1.2] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-1">
+                <span className="text-gold">{data.title1}</span> {data.title2}
               </h2>
               
-              <h2 className="text-[26px] leading-[1.2] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white">
-                We're Always Here for You
+              <h2 className="text-size-26 leading-[1.2] sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white">
+                {data.description}
               </h2>
             </div>
 
             {/* CTA Button */}
             <div className="shrink-0 z-20">
               <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#ffb800] hover:bg-[#e6a600] text-[#051024] font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 whitespace-nowrap"
+                href={data.button1.url}
+                className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-navy font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 whitespace-nowrap"
               >
-                Contact Us
+                {data.button1.text}
                 <FaArrowRight className="text-sm" />
               </Link>
             </div>

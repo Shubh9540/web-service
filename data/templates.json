@@ -1,6 +1,12 @@
 {
   "common": {
+    "siteMetadata": {
+      "title": "Webservice Services",
+      "description": "Professional webservice services for your home and office.",
+      "icon": "/main logo/header-logo.png"
+    },
     "Footer": {
+      "logo": "/main logo/logo.webp",
       "logoAlt": "Weblance Logo",
       "brandTitle": "Weblance",
       "copyrightText": "© 2026 Weblance. All Rights Reserved.Powered by Lestow",
@@ -105,16 +111,22 @@
         "address": "123 Main St, New York, NY, USA"
       },
       "instagram": [
-        "/service/1.jpg",
-        "/service/2.jpg",
-        "/service/3.jpg",
-        "/service/4.jpg",
-        "/service/5.jpg",
-        "/service/6.jpg"
-      ]
+        "/service/service-details.jpg",
+        "/service/service-d1.jpg",
+        "/service/service-d2.jpg",
+        "/service/service-details.jpg",
+        "/service/service-d1.jpg",
+        "/service/service-d2.jpg"
+      ],
+      "quickLinksTitle": "Quick Links",
+      "servicesTitle": "Our Services",
+      "contactTitle": "Contact Us",
+      "scrollTopLabel": "Scroll to top"
     },
     "aboutBreadcrumb": {
       "title": "About Us",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
       "paths": [
         {
           "label": "Home",
@@ -127,6 +139,8 @@
     },
     "servicesBreadcrumb": {
       "title": "Our Services",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
       "paths": [
         {
           "label": "Home",
@@ -137,8 +151,28 @@
         }
       ]
     },
+    "serviceDetailBreadcrumb": {
+      "title": "Service Details",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        {
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "label": "Our Services",
+          "url": "/services"
+        },
+        {
+          "label": "Service Details"
+        }
+      ]
+    },
     "contactBreadcrumb": {
       "title": "Contact Us",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
       "paths": [
         {
           "label": "Home",
@@ -151,6 +185,8 @@
     },
     "enquiryBreadcrumb": {
       "title": "Enquiry Now",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
       "paths": [
         {
           "label": "Home",
@@ -160,6 +196,96 @@
           "label": "Enquiry Now"
         }
       ]
+    },
+    "portfolioBreadcrumb": {
+      "title": "Our Portfolio",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "Our Portfolio" }
+      ]
+    },
+    "pricingBreadcrumb": {
+      "title": "Our Packages",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "Our Packages" }
+      ]
+    },
+    "faqBreadcrumb": {
+      "title": "FAQ",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "FAQ" }
+      ]
+    },
+    "quoteBreadcrumb": {
+      "title": "Get A Quote",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "Get A Quote" }
+      ]
+    },
+    "blogBreadcrumb": {
+      "title": "Our Blogs",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "Blog" }
+      ]
+    },
+    "blogDetailBreadcrumb": {
+      "title": "Blog Details",
+      "bgImage": "/main logo/breadcrumb.webp",
+      "separator": ">",
+      "paths": [
+        { "label": "Home", "url": "/" },
+        { "label": "Blog", "url": "/blog" },
+        { "label": "Blog Details" }
+      ]
+    },
+    "globalUI": {
+      "serviceDetail": {
+        "helpTitle1": "Need Help?",
+        "helpTitle2": "Call Us",
+        "helpDescription": "Get expert consultation for your project requirements.",
+        "helpPhone": "+1 00000000",
+        "helpPhoneUrl": "tel:+100000000",
+        "helpImage": "/portfolio/ui/2.webp",
+        "helpImageAlt": "Need Help",
+        "benefitsTitle": "Key Benefits Of Our Services",
+        "benefits": [
+          { "id": "benefit-modern", "title": "Modern Design", "description": "Unique designs that reflect your brand identity.", "icon": "FaLaptopCode" },
+          { "id": "benefit-responsive", "title": "Fully Responsive", "description": "Optimized for all devices including desktop and mobile.", "icon": "FaMobileAlt" },
+          { "id": "benefit-friendly", "title": "User-Friendly", "description": "Easy navigation for better engagement.", "icon": "FaUsers" },
+          { "id": "benefit-seo", "title": "SEO Friendly", "description": "Built with SEO best practices to improve visibility.", "icon": "FaCheckCircle" }
+        ],
+        "choiceTitle": "Why Choose Our Services?",
+        "choiceFeatures": [
+          { "id": "choice-tailored", "title": "Tailored Solutions", "description": "Custom designs tailored to your business needs.", "icon": "FaLightbulb" },
+          { "id": "choice-performance", "title": "High Performance", "description": "Fast loading and optimized websites.", "icon": "FaChartLine" },
+          { "id": "choice-support", "title": "Ongoing Support", "description": "Continuous support and maintenance.", "icon": "FaShieldAlt" }
+        ],
+        "processImageAlt": "Our process",
+        "videoUrl": "https://www.youtube.com/embed/0x5mf8BUJZY?autoplay=1",
+        "videoTitle": "Process video",
+        "closeVideoLabel": "Close video"
+      },
+      "notFound": {
+        "code": "404",
+        "title": "Oops! Page Not Found",
+        "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "buttonText": "Back to Home",
+        "buttonUrl": "/"
+      }
     }
   },
   "categories": {
@@ -285,6 +411,9 @@
                 "text": "Explore More",
                 "url": "/services"
               },
+              "nextSlideLabel": "Next slide",
+              "previousSlideLabel": "Previous slide",
+              "goToSlideLabel": "Go to slide",
               "slides": [
                 {
                   "id": "slide-1",
@@ -357,7 +486,8 @@
         "AboutUs": {
           "variants": {
             "WebserviceAboutUs1": {
-              "subtitle": "// Welcome to Weblance",
+              "subtitle": "Welcome to Weblance",
+              "subtitlePrefix": "//",
               "title1": "Experienced designers &",
               "title2": "developers",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et We are passionate about changing the way you think about web solutions! dolore magna aliqua. quis nostrud exercitation.",
@@ -380,7 +510,10 @@
                 "url": "/about"
               },
               "imageMain": "/about/about1.jpg",
-              "imageSmall2": "/about/about small.jpg"
+              "imageSmall2": "/about/about small.jpg",
+              "imageMainAlt": "About Weblance",
+              "imageSmallAlt": "Weblance team at work",
+              "watermarkText": "About"
             }
           }
         },
@@ -395,12 +528,13 @@
                 "text": "View More ->",
                 "url": "/services"
               },
+              "readMoreText": "Read More",
               "services": [
                 {
                   "id": "s1",
                   "title": "Custom Software Development",
                   "description": "Tailored software solutions to streamline your business processes and drive growth.",
-                  "image": "/service/1.jpg",
+                  "image": "/service/service-details.jpg",
                   "icon": "FaCode",
                   "url": "/services/custom-software"
                 },
@@ -408,7 +542,7 @@
                   "id": "s2",
                   "title": "Cloud Solutions",
                   "description": "Secure, scalable, and cost-effective cloud services to enhance flexibility and performance.",
-                  "image": "/service/2.jpg",
+                  "image": "/service/service-d1.jpg",
                   "icon": "FaCloud",
                   "url": "/services/cloud-solutions"
                 },
@@ -416,7 +550,7 @@
                   "id": "s3",
                   "title": "Cyber Security",
                   "description": "Advanced security solutions to protect your data, systems, and business from evolving threats.",
-                  "image": "/service/3.jpg",
+                  "image": "/service/service-d2.jpg",
                   "icon": "FaShieldAlt",
                   "url": "/services/cyber-security"
                 },
@@ -424,7 +558,7 @@
                   "id": "s4",
                   "title": "IT Consulting",
                   "description": "Expert guidance to help you choose the right technology and strategy for your business.",
-                  "image": "/service/4.jpg",
+                  "image": "/service/service-details.jpg",
                   "icon": "FaCog",
                   "url": "/services/it-consulting"
                 },
@@ -432,7 +566,7 @@
                   "id": "s5",
                   "title": "IT Infrastructure Management",
                   "description": "Reliable infrastructure solutions to ensure seamless operations and maximum uptime.",
-                  "image": "/service/5.jpg",
+                  "image": "/service/service-d1.jpg",
                   "icon": "FaServer",
                   "url": "/services/it-infrastructure"
                 },
@@ -440,7 +574,7 @@
                   "id": "s6",
                   "title": "Managed IT Services",
                   "description": "Proactive monitoring and support to keep your systems running smoothly and efficiently.",
-                  "image": "/service/6.jpg",
+                  "image": "/service/service-d2.jpg",
                   "icon": "FaUsers",
                   "url": "/services/managed-it"
                 },
@@ -448,7 +582,7 @@
                   "id": "s7",
                   "title": "Data Analytics",
                   "description": "Turn your data into valuable insights to make smarter business decisions.",
-                  "image": "/service/1.jpg",
+                  "image": "/service/service-details.jpg",
                   "icon": "FaChartBar",
                   "url": "/services/data-analytics"
                 },
@@ -456,7 +590,7 @@
                   "id": "s8",
                   "title": "Mobile App Development",
                   "description": "Innovative and user-friendly mobile applications for Android and iOS platforms.",
-                  "image": "/service/2.jpg",
+                  "image": "/service/service-d1.jpg",
                   "icon": "FaMobileAlt",
                   "url": "/services/mobile-app"
                 }
@@ -472,7 +606,7 @@
               "title1": "Webservice",
               "title2": "Installation",
               "description": "We provide professional webservice installation services for residential and commercial properties, ensuring long-lasting performance, leak-free connections and complete peace of mind.",
-              "imageMain": "/service/1.jpg",
+              "imageMain": "/service/service-details.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -500,7 +634,7 @@
                 "Our pipe installation services are designed to meet the needs of modern homes and businesses. Whether you are constructing a new property or upgrading your existing webservice system, our skilled team ensures safe, efficient and high-quality installations using premium-grade materials.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/2.jpg",
+              "overviewImage": "/service/service-d1.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -608,7 +742,7 @@
               "title1": "Leak",
               "title2": "Detection Services",
               "description": "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
-              "imageMain": "/service/2.jpg",
+              "imageMain": "/service/service-d1.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -636,7 +770,7 @@
                 "Find and fix hidden leaks before they become bigger problems. We use advanced tools to detect leaks quickly and accurately.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/2.jpg",
+              "overviewImage": "/service/service-d1.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -744,7 +878,7 @@
               "title1": "Pipe",
               "title2": "& Drain Cleaning",
               "description": "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
-              "imageMain": "/service/3.jpg",
+              "imageMain": "/service/service-d2.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -772,7 +906,7 @@
                 "Keep your pipes clear and your systems running smoothly with our professional drain cleaning services.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/3.jpg",
+              "overviewImage": "/service/service-d2.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -880,7 +1014,7 @@
               "title1": "General",
               "title2": "Webservice Repair",
               "description": "From dripping faucets to faulty pipes, we handle all types of webservice repairs with reliable and long-lasting solutions.",
-              "imageMain": "/service/4.jpg",
+              "imageMain": "/service/service-details.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -908,7 +1042,7 @@
                 "From dripping faucets to faulty pipes, we handle all types of webservice repairs with reliable and long-lasting solutions.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/4.jpg",
+              "overviewImage": "/service/service-details.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -1016,7 +1150,7 @@
               "title1": "Water",
               "title2": "Heater Services",
               "description": "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
-              "imageMain": "/service/5.jpg",
+              "imageMain": "/service/service-d1.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -1044,7 +1178,7 @@
                 "Installation, repair and maintenance of all types of water heaters to ensure a continuous supply of hot water.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/5.jpg",
+              "overviewImage": "/service/service-d1.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -1152,7 +1286,7 @@
               "title1": "Bathroom",
               "title2": "Fixture Installation",
               "description": "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
-              "imageMain": "/service/6.jpg",
+              "imageMain": "/service/service-d2.jpg",
               "features": [
                 {
                   "id": "f1",
@@ -1180,7 +1314,7 @@
                 "We install and repair sinks, faucets, toilets, showers and other bathroom fixtures with expertise and care.",
                 "From water supply lines to drainage pipes, we handle every aspect with precision and care. Our focus is on delivering reliable solutions that prevent future issues and keep your webservice system running smoothly for years to come."
               ],
-              "overviewImage": "/service/6.jpg",
+              "overviewImage": "/service/service-d2.jpg",
               "processTitle": "Our Process",
               "processSteps": [
                 {
@@ -1338,6 +1472,7 @@
               "title1": "Our Latest",
               "title2": "Client Feedback",
               "description": "We take pride in delivering exceptional solutions and building long-term relationships with our clients. Here's what they have to say about working with us.",
+              "quoteMark": "\"",
               "testimonials": [
                 {
                   "id": "1",
@@ -1397,6 +1532,8 @@
               "subtitle": "OUR PORTFOLIO",
               "title1": "Check Our Latest",
               "title2": "Portfolios",
+              "previousSlideLabel": "Previous slide",
+              "nextSlideLabel": "Next slide",
               "categories": [
                 {
                   "id": "cat-data",
@@ -1652,6 +1789,8 @@
                 "text": "View All Blogs",
                 "url": "/blog"
               },
+              "readMoreText": "Read More",
+              "loadMoreText": "Load More",
               "blogs": [
                 {
                   "id": "b1",
@@ -1970,8 +2109,13 @@
                 "title1": "Need Professional",
                 "title2": "IT Support?",
                 "description": "Our experienced team is ready to assist you with all your IT needs. Get in touch today for a quick and reliable solution.",
-                "buttonText": "Enquire Now ->",
+                "buttonText": "Enquire Now",
                 "buttonUrl": "/enquiry"
+              },
+              "detailUI": {
+                "authorLabel": "By Admin",
+                "readTimeLabel": "5 Min Read",
+                "recentBlogsTitle": "Recent Blogs"
               }
             }
           }
@@ -2026,6 +2170,7 @@
                 "url": "/contact"
               },
               "imageMain": "/portfolio/app/1.webp",
+              "imageAlt": "Why choose Weblance",
               "badgeTitle": "100+",
               "badgeText": "Projects Delivered"
             }
@@ -2050,9 +2195,16 @@
                 "hoursLine2": "Sunday: CLOSED"
               },
               "form": {
-                "title": "Send Us a Message",
+                "title": "Feel Free to Write Our",
+                "subtitle": "CONTACT WITH US NOW",
+                "titleHighlight": "Technology Experts",
                 "description": "Fill out the form below and our team will get back to you shortly.",
                 "buttonText": "Send Message",
+                "namePlaceholder": "Your Name",
+                "emailPlaceholder": "Your Email",
+                "subjectPlaceholder": "Subject",
+                "phonePlaceholder": "Your Phone Number",
+                "messagePlaceholder": "Your Message",
                 "servicesList": [
                   "Residential Cleaning",
                   "Commercial Cleaning",
@@ -2083,7 +2235,8 @@
                   "desc2": "estimate for your webservice needs."
                 }
               ],
-              "image": "/about/contact.webp"
+              "image": "/about/contact.webp",
+              "imageAlt": "Weblance office"
             }
           }
         },
@@ -2096,14 +2249,17 @@
               "description": "Tell us about your cleaning requirements and we'll provide you with a customized quote. It's quick, easy and completely free.",
               "features": [
                 {
+                  "id": "enquiry-tailored",
                   "title": "Tailored to Your Needs",
                   "description": "Get a quote based on your specific cleaning requirements."
                 },
                 {
+                  "id": "enquiry-quick",
                   "title": "Quick & Easy",
                   "description": "Fill out the form in just a few minutes."
                 },
                 {
+                  "id": "enquiry-obligation",
                   "title": "No Obligation",
                   "description": "Receive a personalized quote with no commitment."
                 }
@@ -2113,6 +2269,13 @@
                 "title2": "Quote",
                 "description": "Fill out the form below and our team will get back to you shortly with a customized quote.",
                 "buttonText": "Submit Request ->",
+                "namePlaceholder": "Your Name",
+                "emailPlaceholder": "Your Email",
+                "phonePlaceholder": "Your Phone Number",
+                "servicePlaceholder": "Choose Service",
+                "datePlaceholder": "Preferred Date (Optional)",
+                "subjectPlaceholder": "Subject",
+                "messagePlaceholder": "Your Message",
                 "servicesList": [
                   "Residential Cleaning",
                   "Commercial Cleaning",
@@ -2211,6 +2374,7 @@
               "title1": "We've Offered The Best",
               "title2": "Pricing For You",
               "description": "Choose a plan that fits your needs and budget. All plans include powerful features and dedicated support to help you grow.",
+              "currencySymbol": "$",
               "plans": [
                 {
                   "id": "plan-1",
@@ -2282,6 +2446,7 @@
               "title2": "Safety And Security",
               "description": "Find answers to the most common questions about our services, process, pricing and support. If you don't find what you're looking for, feel free to contact our team.",
               "image": "/banner/ban1.jpg",
+              "imageAlt": "Frequently asked questions",
               "faqs": [
                 {
                   "id": "faq-1",
@@ -2366,6 +2531,7 @@
                 }
               ],
               "image": "/about/about1.jpg",
+              "imageAlt": "Weblance project team",
               "floatingBox": {
                 "icon": "FaChartBar",
                 "text1": "Let's Build",
@@ -2381,7 +2547,30 @@
                   "₹ 50,000 - 1,00,000",
                   "₹ Above 1,00,000"
                 ],
-                "buttonText": "Get a Quote"
+                "buttonText": "Get a Quote",
+                "namePlaceholder": "Your Name *",
+                "emailPlaceholder": "Your Email *",
+                "phonePlaceholder": "Your Phone Number *",
+                "servicePlaceholder": "Select Service *",
+                "serviceOptions": [
+                  { "id": "service-web", "label": "Web Development", "value": "web-development" },
+                  { "id": "service-app", "label": "App Development", "value": "app-development" },
+                  { "id": "service-ui", "label": "UI/UX Design", "value": "ui-ux-design" },
+                  { "id": "service-marketing", "label": "Digital Marketing", "value": "digital-marketing" },
+                  { "id": "service-seo", "label": "SEO Optimization", "value": "seo" }
+                ],
+                "companyPlaceholder": "Company Name (Optional)",
+                "projectPlaceholder": "Project Details *\nTell us about your project requirements...",
+                "budgetLabel": "Preferred Budget (Optional)",
+                "timelinePlaceholder": "Expected Timeline (Optional)",
+                "timelineOptions": [
+                  { "id": "timeline-under-one", "label": "Less than 1 month", "value": "less-than-1-month" },
+                  { "id": "timeline-one-three", "label": "1 to 3 months", "value": "1-3-months" },
+                  { "id": "timeline-three-six", "label": "3 to 6 months", "value": "3-6-months" },
+                  { "id": "timeline-over-six", "label": "More than 6 months", "value": "more-than-6-months" }
+                ],
+                "locationPlaceholder": "Your Location (Optional)",
+                "consentLabel": "I agree to be contacted by your team regarding this enquiry."
               }
             }
           }
@@ -2393,6 +2582,10 @@
               "title1": "Photo",
               "title2": "Gallery",
               "description": "A glimpse of our beautifully crafted digital products and solutions.",
+              "button": {
+                "text": "View More Gallery",
+                "url": "/portfolio"
+              },
               "images": [
                 {
                   "id": "img-1",
@@ -2521,25 +2714,75 @@
     }
   },
   "pages": {
-    "about": {
+    "home": {
       "components": [
-        "TopBar",
         "Header",
-        "Breadcrumb",
-        "AboutUs",
-        "Cta",
+        "HeroSection",
+        "ServicesSection",
+        "AboutUsSection",
+        "PortfolioSection",
+        "GallerySection",
+        "CounterSection",
+        "ProcessSection",
+        "TechnologiesSection",
+        "TestimonialSection",
+        "CtaSection",
         "Footer"
       ]
+    },
+    "about": {
+      "components": [
+        "Header",
+        "Breadcrumb",
+        "AboutUsSection",
+        "CounterSection",
+        "ProcessSection",
+        "WhyChooseUsSection",
+        "CtaSection",
+        "Footer"
+      ]
+    },
+    "services": {
+      "components": ["Header", "Breadcrumb", "ServicesSection", "CtaSection", "Footer"]
+    },
+    "service-detail": {
+      "route": "/services/[id]",
+      "components": ["Header", "Breadcrumb", "ServiceDetailContent", "CtaSection", "Footer"]
+    },
+    "portfolio": {
+      "components": ["Header", "Breadcrumb", "PortfolioPageContent", "CtaSection", "Footer"]
+    },
+    "pricing": {
+      "components": ["Header", "Breadcrumb", "PricingSection", "CtaSection", "Footer"]
+    },
+    "faq": {
+      "components": ["Header", "Breadcrumb", "FaqSection", "CtaSection", "Footer"]
+    },
+    "blog": {
+      "components": ["TopBar", "Header", "Breadcrumb", "BlogsSection", "CtaSection", "Footer"]
+    },
+    "blog-detail": {
+      "route": "/blog/[id]",
+      "components": ["TopBar", "Header", "Breadcrumb", "BlogDetailContent", "CtaSection", "Footer"]
+    },
+    "contact": {
+      "components": ["TopBar", "Header", "Breadcrumb", "ContactSection", "CtaSection", "Footer"]
+    },
+    "enquiry": {
+      "components": ["TopBar", "Header", "Breadcrumb", "EnquirySection", "CtaSection", "Footer"]
     },
     "quote": {
       "components": [
         "TopBar",
         "Header",
         "Breadcrumb",
-        "Quote",
-        "Cta",
+        "QuoteSection",
+        "CtaSection",
         "Footer"
       ]
+    },
+    "not-found": {
+      "components": ["TopBar", "Header", "CtaSection", "Footer"]
     }
   }
 }

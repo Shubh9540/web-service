@@ -5,6 +5,7 @@ import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { EnquirySection } from '@/components/sections/EnquirySection';
+import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
@@ -14,7 +15,7 @@ export default function EnquiryPage() {
   const sectionData = templateData?.categories?.Webservice?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   return (
     <main className="bg-white">
@@ -24,6 +25,8 @@ export default function EnquiryPage() {
       
       {/* Enquiry Section */}
       <EnquirySection data={sectionData.enquiry?.variants?.WebserviceEnquiry1} />
+
+      <CtaSection data={sectionData.Cta?.variants?.WebserviceCta1} />
 
       <Footer data={commonData.Footer} />
     </main>

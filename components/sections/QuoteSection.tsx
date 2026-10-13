@@ -46,7 +46,7 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
   if (!data) return null;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#f8fbff] py-16 lg:py-12">
+    <section className="relative w-full overflow-hidden bg-section-light py-16 lg:py-12">
       <div className="relative z-10 mx-auto max-w-[1250px] px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-8">
 
@@ -57,26 +57,26 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
 
             {/* Subtitle */}
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-[#0f67ff]" />
+              <span className="h-px w-8 bg-blue-bright" />
 
-              <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#0f67ff]">
+              <span className="text-size-12 font-bold uppercase tracking-[0.18em] text-blue-bright">
                 {data.subtitle?.replace('//', '').trim()}
               </span>
 
-              <span className="h-px w-8 bg-[#0f67ff]" />
+              <span className="h-px w-8 bg-blue-bright" />
             </div>
 
             {/* Title */}
-            <h2 className="mb-6 text-4xl font-extrabold leading-[1.15] text-[#051024] md:text-5xl">
+            <h2 className="mb-6 text-4xl font-extrabold leading-[1.15] text-navy md:text-5xl">
               {data.title1}
               <br />
-              <span className="text-[#0d65ff]">
+              <span className="text-brand">
                 {data.title2}
               </span>
             </h2>
 
             {/* Description */}
-            <p className="mb-10 text-[15px] leading-relaxed text-[#657187]">
+            <p className="mb-10 text-size-15 leading-relaxed text-muted">
               {data.description}
             </p>
 
@@ -87,16 +87,16 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
                   key={f.id}
                   className="flex items-start gap-4"
                 >
-                  <div className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full border border-[#e4edfa] bg-white text-[18px] text-[#0d65ff]">
+                  <div className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full border border-border-soft bg-white text-size-18 text-brand">
                     {renderIcon(f.icon)}
                   </div>
 
                   <div className="flex flex-col pt-0.5">
-                    <span className="mb-1 text-[15px] font-bold text-[#051024]">
+                    <span className="mb-1 text-size-15 font-bold text-navy">
                       {f.title}
                     </span>
 
-                    <span className="max-w-[250px] text-[13px] leading-relaxed text-[#657187]">
+                    <span className="max-w-[250px] text-size-13 leading-relaxed text-muted">
                       {f.description}
                     </span>
                   </div>
@@ -108,23 +108,23 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
             <div className="relative h-[300px] w-full overflow-hidden rounded-[30px] rounded-bl-[10px] rounded-tl-[120px] shadow-lg">
               <img
                 src={data.image}
-                alt="Team"
+                alt={data.imageAlt}
                 className="h-full w-full object-cover"
               />
 
               {/* Floating Box */}
               {data.floatingBox && (
-                <div className="absolute bottom-6 right-6 flex items-center gap-4 rounded-[16px] bg-[#0d65ff] p-5 shadow-xl">
-                  <div className="text-[32px] text-white">
+                <div className="absolute bottom-6 right-6 flex items-center gap-4 rounded-2xl bg-brand p-5 shadow-xl">
+                  <div className="text-size-32 text-white">
                     {renderIcon(data.floatingBox.icon)}
                   </div>
 
                   <div className="flex flex-col text-white">
-                    <span className="text-[13px] font-medium opacity-90">
+                    <span className="text-size-13 font-medium opacity-90">
                       {data.floatingBox.text1}
                     </span>
 
-                    <span className="text-[14px] font-bold">
+                    <span className="text-size-14 font-bold">
                       {data.floatingBox.text2}
                     </span>
                   </div>
@@ -136,17 +136,17 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
           {/* =========================
               RIGHT COLUMN
           ========================== */}
-          <div className="relative w-full rounded-[24px] border border-[#e4edfa] bg-white p-6 shadow-[0_20px_50px_rgba(13,101,255,0.06)] md:p-10 lg:col-span-7">
+          <div className="relative w-full rounded-3xl border border-border-soft bg-white p-6 shadow-[0_20px_50px_rgba(13,101,255,0.06)] md:p-10 lg:col-span-7">
 
             {/* Form Heading */}
-            <h3 className="mb-2 text-[28px] font-extrabold text-[#051024]">
+            <h3 className="mb-2 text-size-28 font-extrabold text-navy">
               {data.form.title}{' '}
-              <span className="text-[#0d65ff]">
+              <span className="text-brand">
                 {data.form.titleHighlight}
               </span>
             </h3>
 
-            <p className="mb-8 max-w-[450px] text-[14px] leading-relaxed text-[#657187]">
+            <p className="mb-8 max-w-[450px] text-size-14 leading-relaxed text-muted">
               {data.form.description}
             </p>
 
@@ -160,86 +160,83 @@ export const QuoteSection = ({ data }: { data?: QuoteData }) => {
 
                 {/* Name */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaUser />
                   </span>
 
                   <input
                     type="text"
-                    placeholder="Your Name *"
-                    className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                    placeholder={data.form.namePlaceholder}
+                    className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                   />
                 </div>
 
                 {/* Email */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaEnvelope />
                   </span>
 
                   <input
                     type="email"
-                    placeholder="Your Email *"
-                    className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                    placeholder={data.form.emailPlaceholder}
+                    className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                   />
                 </div>
 
                 {/* Phone */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaPhoneAlt />
                   </span>
 
                   <input
                     type="tel"
-                    placeholder="Your Phone Number *"
-                    className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                    placeholder={data.form.phonePlaceholder}
+                    className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                   />
                 </div>
 
                 {/* Service */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaBriefcase />
                   </span>
 
-                  <select className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
+                  <select className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 text-muted transition-colors focus:border-brand focus:outline-none">
                     <option value="">
-                      Select Service *
+                      {data.form.servicePlaceholder}
                     </option>
-                    <option value="web-development">Web Development</option>
-                    <option value="app-development">App Development</option>
-                    <option value="ui-ux-design">UI/UX Design</option>
-                    <option value="digital-marketing">Digital Marketing</option>
-                    <option value="seo">SEO Optimization</option>
+                    {data.form.serviceOptions.map((option) => (
+                      <option key={option.id} value={option.value}>{option.label}</option>
+                    ))}
                   </select>
                 </div>
               </div>
 
               {/* Company */}
               <div className="relative">
-                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                   <FaBuilding />
                 </span>
 
                 <input
                   type="text"
-                  placeholder="Company Name (Optional)"
-                  className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                  placeholder={data.form.companyPlaceholder}
+                  className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                 />
               </div>
 
               {/* Project Details */}
               <div className="relative">
-                <span className="absolute left-4 top-6 text-[#a0abbd]">
+                <span className="absolute left-4 top-6 text-icon-muted">
                   <FaRegCommentDots />
                 </span>
 
                 <textarea
-                  placeholder={`Project Details *
-Tell us about your project requirements...`}
+                  placeholder={data.form.projectPlaceholder}
                   rows={4}
-                  className="w-full resize-none rounded-[8px] border border-[#e4edfa] bg-white py-4 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                  className="w-full resize-none rounded-lg border border-border-soft bg-white py-4 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                 />
               </div>
 
@@ -247,8 +244,8 @@ Tell us about your project requirements...`}
                   BUDGET
               ========================== */}
               <div className="pt-2">
-                <label className="mb-3 block text-[13px] font-bold text-[#051024]">
-                  Preferred Budget (Optional)
+                <label className="mb-3 block text-size-13 font-bold text-navy">
+                  {data.form.budgetLabel}
                 </label>
 
                 <div className="flex flex-wrap gap-3">
@@ -256,12 +253,12 @@ Tell us about your project requirements...`}
                     const isSelected = selectedBudget === i;
                     return (
                       <button
-                        key={i}
+                      key={b}
                         type="button"
                         onClick={() => setSelectedBudget(isSelected ? null : i)}
-                        className={`rounded-[6px] border px-4 py-2 text-[12px] font-medium transition-colors ${isSelected
-                          ? 'border-[#0d65ff] bg-[#edf5ff] text-[#0d65ff]'
-                          : 'border-[#e4edfa] text-[#657187] hover:border-[#0d65ff] hover:text-[#0d65ff]'
+                        className={`rounded-md border px-4 py-2 text-size-12 font-medium transition-colors ${isSelected
+                          ? 'border-brand bg-surface-blue text-brand'
+                          : 'border-border-soft text-muted hover:border-brand hover:text-brand'
                           }`}
                       >
                         {b}
@@ -276,31 +273,30 @@ Tell us about your project requirements...`}
 
                 {/* Timeline */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaRegCalendarAlt />
                   </span>
 
-                  <select className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] text-[#657187] transition-colors focus:border-[#0d65ff] focus:outline-none">
+                  <select className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 text-muted transition-colors focus:border-brand focus:outline-none">
                     <option value="">
-                      Expected Timeline (Optional)
+                      {data.form.timelinePlaceholder}
                     </option>
-                    <option value="less-than-1-month">Less than 1 month</option>
-                    <option value="1-3-months">1 to 3 months</option>
-                    <option value="3-6-months">3 to 6 months</option>
-                    <option value="more-than-6-months">More than 6 months</option>
+                    {data.form.timelineOptions.map((option) => (
+                      <option key={option.id} value={option.value}>{option.label}</option>
+                    ))}
                   </select>
                 </div>
 
                 {/* Location */}
                 <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a0abbd]">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-icon-muted">
                     <FaMapMarkerAlt />
                   </span>
 
                   <input
                     type="text"
-                    placeholder="Your Location (Optional)"
-                    className="w-full rounded-[8px] border border-[#e4edfa] bg-white py-3.5 pl-11 pr-4 text-[14px] transition-colors focus:border-[#0d65ff] focus:outline-none"
+                    placeholder={data.form.locationPlaceholder}
+                    className="w-full rounded-lg border border-border-soft bg-white py-3.5 pl-11 pr-4 text-size-14 transition-colors focus:border-brand focus:outline-none"
                   />
                 </div>
               </div>
@@ -310,22 +306,22 @@ Tell us about your project requirements...`}
                 <input
                   type="checkbox"
                   defaultChecked
-                  className="mt-[2px] h-4 w-4 rounded border-[#e4edfa] text-[#0d65ff] focus:ring-[#0d65ff]"
+                  className="mt-0.5 h-4 w-4 rounded border-border-soft text-brand focus:ring-brand"
                 />
 
-                <span className="text-[13px] leading-relaxed text-[#657187]">
-                  I agree to be contacted by your team regarding this enquiry.
+                <span className="text-size-13 leading-relaxed text-muted">
+                  {data.form.consentLabel}
                 </span>
               </label>
 
               {/* Submit */}
               <button
                 type="button"
-                className="mt-2 flex w-full items-center justify-center gap-2 rounded-[8px] bg-[#0d65ff] py-4 text-[15px] font-bold text-white transition-colors hover:bg-[#0b56db]"
+                className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg bg-brand py-4 text-size-15 font-bold text-white transition-colors hover:bg-brand-hover"
               >
                 {data.form.buttonText}
 
-                <FaArrowRight className="text-[12px]" />
+                <FaArrowRight className="text-size-12" />
               </button>
             </form>
           </div>

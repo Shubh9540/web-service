@@ -15,7 +15,7 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
           {/* Left Column: Quote Info */}
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-[2px] bg-[var(--color-accent)]" />
+              <div className="w-8 h-0.5 bg-[var(--color-accent)]" />
               <h4 className="text-[var(--color-accent)] font-bold text-xs tracking-widest uppercase">
                 {data.subtitle}
               </h4>
@@ -31,8 +31,8 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
             </p>
 
             <div className="flex flex-col gap-8">
-              {data.features.map((feature, idx) => (
-                <div key={idx} className="flex flex-col gap-1">
+              {data.features.map((feature) => (
+                <div key={feature.id} className="flex flex-col gap-1">
                   <h4 className="text-lg font-bold text-[var(--color-primary)]">
                     {feature.title}
                   </h4>
@@ -57,12 +57,12 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder={data.form.namePlaceholder}
                   className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
                 />
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder={data.form.emailPlaceholder}
                   className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
                 />
               </div>
@@ -70,13 +70,13 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="Your Phone Number"
+                  placeholder={data.form.phonePlaceholder}
                   className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
                 />
                 <select className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-[var(--color-accent)] transition-colors appearance-none">
-                  <option value="">Choose Service</option>
-                  {data.form.servicesList.map((service, idx) => (
-                    <option key={idx} value={service}>{service}</option>
+                  <option value="">{data.form.servicePlaceholder}</option>
+                  {data.form.servicesList.map((service) => (
+                    <option key={service} value={service}>{service}</option>
                   ))}
                 </select>
               </div>
@@ -86,7 +86,7 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
                   type="text"
                   onFocus={(e) => (e.target.type = 'date')}
                   onBlur={(e) => { if (!e.target.value) e.target.type = 'text'; }}
-                  placeholder="Preferred Date (Optional)"
+                  placeholder={data.form.datePlaceholder}
                   className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-500 focus:outline-none focus:border-[var(--color-accent)] transition-colors"
                 />
                 <FiCalendar className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -94,12 +94,12 @@ export const EnquirySection = ({ data }: { data?: EnquiryData }) => {
 
               <input
                 type="text"
-                placeholder="Subject"
+                placeholder={data.form.subjectPlaceholder}
                 className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors"
               />
 
               <textarea
-                placeholder="Your Message"
+                placeholder={data.form.messagePlaceholder}
                 rows={5}
                 className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors resize-none"
               ></textarea>

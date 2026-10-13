@@ -12,11 +12,64 @@
   --color-bg-card: #ffffff;
   --color-bg-alt: #f3f7ff;
   --color-primary: #0056fb;
+  --color-primary-dark: #0048d4;
+  --color-primary-light: #4d8dff;
   --color-accent: #ffb703;
   --color-accent-light: #4d8dff;
   --color-text: #222222;
   --color-text-light: #6b7280;
   --color-border: #e0ebff;
+  --color-bg-light: #ffffff;
+
+  /* Extended design palette used by Tailwind semantic color tokens. */
+  --palette-brand: 13 101 255;
+  --palette-navy: 5 16 36;
+  --palette-primary: 0 86 251;
+  --palette-border-soft: 228 237 250;
+  --palette-muted: 101 113 135;
+  --palette-blue-bright: 15 103 255;
+  --palette-text-light: 107 114 128;
+  --palette-surface-blue: 237 245 255;
+  --palette-border-pale: 240 244 248;
+  --palette-icon-muted: 160 171 189;
+  --palette-heading: 7 20 44;
+  --palette-cyan: 0 207 255;
+  --palette-section-blue: 244 248 255;
+  --palette-primary-dark: 0 72 212;
+  --palette-heading-soft: 17 28 51;
+  --palette-surface-neutral: 248 249 252;
+  --palette-primary-surface: 240 247 255;
+  --palette-primary-border: 229 240 255;
+  --palette-section-light: 248 251 255;
+  --palette-card-soft: 252 252 255;
+  --palette-gold: 255 184 0;
+  --palette-blue-light: 165 202 255;
+  --palette-blue-wash: 238 244 255;
+  --palette-brand-hover: 11 86 219;
+  --palette-cyan-bright: 0 163 255;
+  --palette-glow-blue: 240 245 255;
+  --palette-brand-wash: 238 245 255;
+  --palette-dot-blue: 183 211 255;
+  --palette-muted-2: 120 131 150;
+  --palette-navy-soft: 16 27 50;
+  --palette-border-blue: 226 235 247;
+  --palette-blue-deep: 7 86 220;
+  --palette-indigo: 56 75 255;
+  --palette-hover-white: 250 251 255;
+  --palette-border-faint: 240 244 250;
+  --palette-dash-blue: 207 224 255;
+  --palette-gradient-blue: 0 59 181;
+  --palette-gold-dark: 230 166 0;
+  --palette-cyan-dark: 0 141 230;
+  --palette-navy-deep: 13 27 75;
+  --palette-blue-muted: 163 184 215;
+  --palette-blue-dot-light: 219 230 254;
+  --palette-surface-green: 248 251 251;
+  --palette-orange: 246 145 30;
+  --palette-border-cool: 221 231 245;
+  --palette-brand-hover-dark: 11 86 217;
+  --palette-surface-blue-light: 240 246 255;
+  --palette-footer-navy: 1 37 94;
 }
 
 body {

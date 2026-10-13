@@ -14,20 +14,13 @@ export default function PortfolioPage() {
   const sectionData = templateData?.categories?.Webservice?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
   return (
-    <main className="bg-[#f8f9fc] min-h-screen flex flex-col">
+    <main className="bg-surface-neutral min-h-screen flex flex-col">
       <div className="relative">
         <Header data={sectionData.Header?.variants?.WebserviceHeader1} />
-        <Breadcrumb data={{
-          title: "Our Portfolio",
-          bgImage: commonData.aboutBreadcrumb?.bgImage, // Using about breadcrumb bg
-          paths: [
-            { label: "Home", url: "/" },
-            { label: "Our Portfolio" }
-          ]
-        }} />
+        <Breadcrumb data={commonData.portfolioBreadcrumb} />
       </div>
       
       {/* Portfolio Content Without Tabs */}

@@ -5,6 +5,7 @@ import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { BlogDetailContent } from '@/components/sections/BlogDetailContent';
+import { CtaSection } from '@/components/sections/CtaSection';
 import { Footer } from '@/components/common/Footer';
 import { notFound } from 'next/navigation';
 
@@ -18,9 +19,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
   const sectionData = templateData?.categories?.Webservice?.sections;
   const commonData = templateData?.common;
 
-  if (!sectionData || !commonData) return <div className="text-black p-10">Loading Data...</div>;
+  if (!sectionData || !commonData) return null;
 
-  const allBlogs = sectionData.Blogs?.variants?.WebserviceBlogs1?.blogs || [];
+  const blogsData = sectionData.Blogs?.variants?.WebserviceBlogs1;
+  if (!blogsData) return null;
+
+  const allBlogs = blogsData.blogs;
   const currentBlog = allBlogs.find(b => b.url.endsWith(`/${id}`));
 
   if (!currentBlog) {
@@ -30,14 +34,13 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
   // Get 5 recent blogs, excluding the current one
   const recentBlogs = allBlogs.filter(b => b.id !== currentBlog.id).slice(0, 5);
 
-  // Create breadcrumb data for the specific blog
   const breadcrumbData = {
+    ...commonData.blogDetailBreadcrumb,
     title: currentBlog.title,
     paths: [
-      { label: 'Home', url: '/' },
-      { label: 'Blog', url: '/blog' },
-      { label: 'Blog Details' }
-    ]
+      ...commonData.blogDetailBreadcrumb.paths.slice(0, -1),
+      commonData.blogDetailBreadcrumb.paths.at(-1)!,
+    ],
   };
 
   return (
@@ -47,7 +50,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ id:
       
       <Breadcrumb data={breadcrumbData} />
       
-      <BlogDetailContent blog={currentBlog} recentBlogs={recentBlogs} sidebarCta={sectionData.Blogs?.variants?.WebserviceBlogs1?.sidebarCta} />
+      <BlogDetailContent blog={currentBlog} recentBlogs={recentBlogs} detailUI={blogsData.detailUI} sidebarCta={blogsData.sidebarCta} />
+
+      <CtaSection data={sectionData.Cta?.variants?.WebserviceCta1} />
 
       <Footer data={commonData.Footer} />
     </main>
