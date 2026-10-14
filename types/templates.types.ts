@@ -116,7 +116,7 @@ export interface ProcessData {
   subtitle: string;
   title1: string;
   title2: string;
-  description: string;
+  description?: string;
   bgImage: string;
   steps: ProcessItem[];
 }
